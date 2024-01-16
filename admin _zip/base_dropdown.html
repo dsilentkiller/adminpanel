@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Android Example Admin Console</title>
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+<link href="css/font-awesome.min.css" rel="stylesheet" >
+<link href="css/style.css" rel="stylesheet">
+<link href="css/nav.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/shCoreEclipse.css"/>
+<link type="text/css" rel="Stylesheet" href="css/shThemeEclipse.css" />
+<link href="css/global.css" rel="stylesheet">
+<link href="css/baseui.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<script type="text/javascript" src="js/XRegExp.js"></script>
+<script type="text/javascript" src="js/shCore.js"></script>
+<script type="text/javascript" src="js/shBrushXml.js"></script>
+<script type="text/javascript">
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+    SyntaxHighlighter.all();
+</script>
+
+</head>
+<body>
+<header class="navbar navbar-dark  bg-dark flex-md-nowrap p-0 shadow header_b">
+  
+  <div class="col-md-2">
+    <div class="header_topl">
+	 <h4 class="mb-0" style="font-size:1.5rem; padding-top:4px; padding-left:15px;"><a class="col_1" href="dashboard_n.html">ADMINISTRATOR</a></h4>
+	</div>
+  </div>
+  <div class="col-md-10">
+   <div class="header_topr" style="float:right;">
+     <ul class="nav hide">
+  <li class="nav-item sign_box_1">
+    <a class="nav-link  text-dark" href="#"><i class="fa fa-home col_7"></i> Home</a>
+  </li>
+  <li class="nav-item sign_box_1">
+    <a class="nav-link  text-dark" href="#"><i class="fa fa-comment col_7"></i> 3</a>
+  </li>
+  <li class="nav-item sign_box_1">
+    <a class="nav-link  text-dark" href="#"><i class="fa fa-plus col_7"></i> New</a>
+  </li>
+  
+  <li class="nav-item dropdown notification">
+    <a class="nav-link dropdown-toggle text-white  border-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><button type="button" class="border-0 btn  col_7  position-relative">
+  <i class="fa fa-bell"></i>
+  <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger" style="top:5px;">
+    3+
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button></a>
+    <ul class="dropdown-menu drop_1" style="left:auto; right:0;  min-width:300px;">
+	  <li class="noti_p">Notification <span class="pull-right"><a href="#">Clear All</a></span></li>
+      <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1 border-0">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+    </ul>
+  </li>
+  <li class="nav-item sign_box dropdown">
+    <a class="nav-link dropdown-toggle text-dark  border-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img alt="abc" class="rounded-circle" width="30"height="30" src="img/1.jpg">Eget Nulla</a>
+      <ul class="dropdown-menu drop_2" style="left:auto; right:0; min-width:200px;">
+	  <li class="small" style="padding: 0.25rem 1rem;">Welcome !</li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> My Account</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-gear"></i> Settings</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-life-bouy"></i> Support</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Lock Screen</a></li>
+	  <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+    </ul>
+  </li>
+</ul>
+   </div>
+  </div>
+  
+</header>
+
+<section id="menu_big" class="sticky-top">
+<nav class="navbar navbar-expand-md navbar-light bg-light p-0">
+  <div class="container-fluid">
+    <a class="navbar-brand col_1" style="padding-top:2px; padding-bottom:0;" href="dashboard_n.html">ADMINISTRATOR</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-lg-0">
+	    <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            <i style="margin-right:5px;" class="fa fa-home"></i> Home
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+		    <li><a class="dropdown-item" href="dashboard_n.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Dashboard</a></li>
+            <li><a class="dropdown-item" href="form.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Form</a></li>
+            <li><a class="dropdown-item" href="list.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> List</a></li>
+          </ul>
+        </li>
+		
+		
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b active_tag" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-diamond"></i> Base UI
+          </a>
+          <ul class="dropdown-menu drop_b1 drop_b2" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="base_accordions.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Accordions</a></li>
+            <li><a class="dropdown-item" href="base_alerts.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Alerts</a></li>
+			 <li><a class="dropdown-item" href="base_badges.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Badges</a></li>
+			  <li><a class="dropdown-item" href="base_breadcrumb.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Breadcrumb</a></li>
+            <li><a class="dropdown-item" href="base_buttons.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Buttons</a></li>
+			 <li><a class="dropdown-item" href="base_card.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Cards</a></li>
+			 <li><a class="dropdown-item" href="base_carousel.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Carousel</a></li>
+			 <li><a class="dropdown-item active_tag" href="base_dropdown.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Dropdowns</a></li>
+			  <li><a class="dropdown-item" href="base_grid.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Grid</a></li>
+            <li><a class="dropdown-item" href="base_listgroup.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  List Group</a></li>
+			 <li><a class="dropdown-item" href="base_modals.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Modals</a></li>
+			  <li><a class="dropdown-item" href="base_notifi.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Notifications</a></li>
+            <li><a class="dropdown-item" href="base_offcanvas.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Offcanvas</a></li>
+			 <li><a class="dropdown-item" href="base_placeh.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Placeholders</a></li>
+			 <li><a class="dropdown-item" href="base_pagination.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Pagination</a></li>
+			 <li><a class="dropdown-item" href="base_progress.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Progress</a></li>
+			 <li><a class="dropdown-item" href="base_spinners.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Spinners</a></li>
+			 <li><a class="dropdown-item" href="base_tabs.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Tabs</a></li>
+			 <li><a class="dropdown-item" href="base_tooltips.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Tooltips</a></li>
+			 <li><a class="dropdown-item" href="base_typo.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Typography</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-file"></i> Forms
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="form_basic.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Basic Elements</a></li>
+            <li><a class="dropdown-item" href="form_validation.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Validation</a></li>
+			 <li><a class="dropdown-item" href="form_wizard.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Wizard</a></li>
+
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-table"></i> Table
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="table_basic.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Basic Table</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-copy"></i> Pages
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a target="_blank" class="dropdown-item" href="authen_login.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Login</a></li>
+            <li><a target="_blank" class="dropdown-item" href="login2.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Login 2</a></li>
+			 <li><a target="_blank" class="dropdown-item" href="error.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Error</a></li>
+			  <li><a target="_blank" class="dropdown-item" href="authen_register.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Register</a></li>
+            <li><a target="_blank" class="dropdown-item" href="authen_logout.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Logout</a></li>
+			 <li><a target="_blank" class="dropdown-item" href="authen_recover.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Recover Password</a></li>
+			 <li><a target="_blank" class="dropdown-item" href="authen_lock_screen.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Lock Screen</a></li>
+			 <li><a target="_blank" class="dropdown-item" href="authen_confirm_mail.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Confirm Mail</a></li>
+			 
+			 <li><a  class="dropdown-item" href="profile.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Profile</a></li>
+          </ul>
+        </li>
+        
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-shopping-cart"></i> Ecommerce
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="ecommerce_prod.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Product</a></li>
+            <li><a class="dropdown-item" href="ecommerce_prod_details.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Product Details</a></li>
+			 <li><a class="dropdown-item" href="ecommerce_orders.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Order</a></li>
+            <li><a class="dropdown-item" href="ecommerce_orders_detail.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Order Details</a></li>
+			 <li><a class="dropdown-item" href="ecommerce_customers.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Customers</a></li>
+            <li><a class="dropdown-item" href="ecommerce_sellers.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Sellers</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-briefcase"></i> Projects
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="project_list.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Lists</a></li>
+            <li><a class="dropdown-item" href="project_list_detail.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Details</a></li>
+			 <li><a class="dropdown-item" href="create_project.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Create Project</a></li>
+          </ul>
+        </li>
+		
+
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</section>
+
+
+<div class="container-fluid">
+  <div class="row">
+    
+
+    <main class="col-md-9 ms-sm-auto common col-lg-10 px-md-4">
+       <div class="row crm_1">
+	   <div class="col-md-3">
+	    <div class="analytic_1l">
+		 <h5 class="mb-0">Dropdowns</h5>
+		</div>
+	   </div>
+	   <div class="col-md-9">
+	    <div class="crm_1r pull-right">
+	      <ul>
+		   <li class="col_3 d-inline-block"><a href="#">Lorem</a> <i style="margin-left:5px; vertical-align:middle;" class="fa fa-chevron-right"></i></li>
+		   <li class="col_3 d-inline-block"><a href="#">Base UI</a> <i style="margin-left:5px; vertical-align:middle;" class="fa fa-chevron-right"></i></li>
+		   <li class="col_3 d-inline-block">Dropdowns</li>
+		  </ul>
+		</div>
+	   </div>
+	  </div>
+
+       <div class="row base_dropdown mt-2">
+	    <div class="col-md-6">
+		  <div class="card">
+          <div class="card-header">
+           <h5>SINGLE BUTTON DROPDOWNS</h5>
+          </div>
+          <div class="card-body">
+	         <p>Any single .btn can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to work with either elements:</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview31" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code31" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview31">
+			    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+			</div>
+			<div class="tab-pane" id="code31">
+			<pre class="brush: html;">
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+						 Dropdown button
+					</button>
+					
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				</div>
+			</pre>
+			</div>
+			</div>  
+          </div>
+      </div>
+	  
+	     <div class="card mt-4">
+          <div class="card-header">
+             <h5>VARIANT</h5>
+          </div>
+          <div class="card-body">
+	          <p>The best part is you can do this with any button variant, too:</p>
+		    <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview32" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code32" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview32">
+			    <!-- Light -->
+<button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Light</button>
+<div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+	 <a class="dropdown-item" href="#">other</a>
+</div>
+
+<!-- Secondary -->
+<button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Secondary</button>
+<div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+	<a class="dropdown-item" href="#">other</a>
+</div>
+
+
+<!-- Primary -->
+<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary</button>
+<div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+	<a class="dropdown-item" href="#">other</a>
+</div>
+
+<!-- Success -->
+<button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success</button>
+<div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+	<a class="dropdown-item" href="#">other</a>
+</div>
+
+<!-- Info -->
+<button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</button>
+<div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+	<a class="dropdown-item" href="#">other</a>
+</div>
+
+<!-- Warning -->
+<button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning</button>
+<div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+	<a class="dropdown-item" href="#">other</a>
+</div>
+
+<!-- Danger -->
+<button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger</button>
+<div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+	<a class="dropdown-item" href="#">other</a>
+</div>
+
+<!-- Dark -->
+<button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dark</button>
+<div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+	<a class="dropdown-item" href="#">other</a>
+</div>
+			</div>
+			<div class="tab-pane" id="code32">
+			<pre class="brush: html;">
+				<!-- Light -->
+				<button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Light</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">other</a>
+				</div>
+				
+				<!-- Secondary -->
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Secondary</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">other</a>
+				</div>
+				
+				
+				<!-- Primary -->
+				<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">other</a>
+				</div>
+				
+				<!-- Success -->
+				<button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">other</a>
+				</div>
+				
+				<!-- Info -->
+				<button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">other</a>
+				</div>
+				
+				<!-- Warning -->
+				<button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">other</a>
+				</div>
+				
+				<!-- Danger -->
+				<button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">other</a>
+				</div>
+				
+				<!-- Dark -->
+				<button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dark</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">other</a>
+				</div>
+			</pre>
+			</div>
+			</div> 
+          </div>
+      </div>
+		  
+          <div class="card mt-4">
+          <div class="card-header">
+            <h5>ANIMATED DROPDOWN</h5>
+          </div>
+          <div class="card-body">
+	        	  <p>Add .dropdown-menu-animated to a .dropdown-menu to have animated dropdown menu.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview33" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code33" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview33">
+		      <div class="dropdown btn-group">
+    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Animated Dropdown
+    </button>
+    <div class="dropdown-menu dropdown-menu-animated">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+</div>
+			</div>
+			<div class="tab-pane" id="code33">
+			<pre class="brush: html;">
+				<div class="dropdown btn-group">
+					<button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					     Animated Dropdown
+					</button>
+					
+					<div class="dropdown-menu dropdown-menu-animated">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+	  
+	     <div class="card mt-4">
+          <div class="card-header">
+             <h5>DROPUP VARIATION</h5>
+          </div>
+          <div class="card-body">
+	           <p>Trigger dropdown menus above elements by adding .dropup to the parent element.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview34" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code34" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview34">
+		           <div class="btn-group dropup">
+    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+</div>
+            
+<!-- Split dropup button -->
+<div class="btn-group dropup">
+    <button type="button" class="btn btn-light">
+        Split dropup
+    </button>
+    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+</div>
+			</div>
+			<div class="tab-pane" id="code34">
+			<pre class="brush: html;">
+				<div class="btn-group dropup">
+					<button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Separated link</a>
+					</div>
+				</div>
+				
+				<!-- Split dropup button -->
+				<div class="btn-group dropup">
+					<button type="button" class="btn btn-light">
+					Split dropup
+					</button>
+					<button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="visually-hidden">Toggle Dropdown</span>
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Separated link</a>
+					</div>
+				</div>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+	  
+	    <div class="card mt-4">
+          <div class="card-header">
+           <h5>DROPEND VARIATION</h5>
+          </div>
+          <div class="card-body">
+	         	  <p>Trigger dropdown menus at the right of the elements by adding .dropend to the parent element.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview35" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code35" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview35">
+		           
+          <!-- Default dropend button -->
+<div class="btn-group mb-2 dropend">
+    <button type="button" class="btn btn-primary   dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropend
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+</div>
+            
+<!-- Split dropend button -->
+<div class="btn-group mb-2 dropend">
+    <button type="button" class="btn btn-primary ">
+        Split Dropend
+    </button>
+    <button type="button" class="btn btn-primary dropdown-toggle-split dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="visually-hidden">Toggle Dropright</span>
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+</div>
+			</div>
+			<div class="tab-pane" id="code35">
+			<pre class="brush: html;">
+				
+				<!-- Default dropend button -->
+				<div class="btn-group mb-2 dropend">
+					<button type="button" class="btn btn-primary   dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Dropend
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Separated link</a>
+					</div>
+				</div>
+				
+				<!-- Split dropend button -->
+				<div class="btn-group mb-2 dropend">
+					<button type="button" class="btn btn-primary ">
+					Split Dropend
+					</button>
+					<button type="button" class="btn btn-primary dropdown-toggle-split dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="visually-hidden">Toggle Dropright</span>
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Separated link</a>
+					</div>
+				</div>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		  <div class="card mt-4">
+          <div class="card-header">
+             <h5>DISABLED ITEM</h5>
+          </div>
+          <div class="card-body">
+	           <p>Add .disabled to items in the dropdown to style them as disabled.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview36" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code36" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview36">
+	            <!-- Disabled -->
+<div class="btn-group">
+    <button type="button" class="btn btn-primary   dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Disabled
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Regular link</a>
+        <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Disabled link</a>
+        <a class="dropdown-item" href="#">Another link</a>
+    </div>
+</div>  
+			</div>
+			<div class="tab-pane" id="code36">
+			<pre class="brush: html;">
+				<!-- Disabled -->
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary   dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Disabled
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Regular link</a>
+						<a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Disabled link</a>
+						<a class="dropdown-item" href="#">Another link</a>
+					</div>
+				</div>  
+			
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+	  
+	     <div class="card mt-4">
+          <div class="card-header">
+            <h5>TEXT</h5>
+          </div>
+          <div class="card-body">
+	            <p>Place any freeform text within a dropdown menu with text and use spacing utilities. Note that you’ll likely need additional sizing styles to constrain the menu width.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview37" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code37" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview37">
+	          <!-- Disabled -->
+<!-- Text Example -->
+<div class="btn-group">
+    <button type="button" class="btn btn-primary   dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Text Dropdown
+    </button>
+    <div class="dropdown-menu p-3 text-muted" style="max-width: 200px;">
+        <p>
+            Some example text that's free-flowing within the dropdown menu.
+        </p>
+        <p class="mb-0">
+            And this is more example text.
+        </p>
+    </div>
+</div>  
+			</div>
+			<div class="tab-pane" id="code37">
+			<pre class="brush: html;">
+				<!-- Disabled -->
+				<!-- Text Example -->
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary   dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Text Dropdown
+					</button>
+					
+					<div class="dropdown-menu p-3 text-muted" style="max-width: 200px;">
+						<p>
+						Some example text that's free-flowing within the dropdown menu.
+						</p>
+						<p class="mb-0">
+						And this is more example text.
+						</p>
+					</div>
+				</div>  
+			
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		  
+		  
+		</div>
+		<div class="col-md-6">
+		  <div class="card">
+          <div class="card-header">
+            <h5>MENU ALIGNMENT</h5>
+          </div>
+          <div class="card-body">
+	           <p>Add .dropdown-menu-end to a .dropdown-menu to right align the dropdown menu.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview38" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code38" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview38">
+	         <div class="dropdown">
+    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Right-aligned menu
+    </button>
+    <div class="dropdown-menu dropdown-menu-end">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+</div>
+			</div>
+			<div class="tab-pane" id="code38">
+			<pre class="brush: html;">
+				<div class="dropdown">
+					<button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Right-aligned menu
+					</button>
+					
+					<div class="dropdown-menu dropdown-menu-end">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+			
+			</pre>
+			</div>
+			</div> 
+          </div>
+      </div>
+	  
+	    <div class="card  mt-4">
+          <div class="card-header">
+             <h5>SPLIT BUTTON DROPDOWNS</h5>
+          </div>
+          <div class="card-body">
+	          <p>Similarly, create split button dropdowns with virtually the same markup as single button dropdowns, but with the addition of .dropdown-toggle-split for proper spacing around the dropdown caret.</p>
+		   <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview39" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code39" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview39">
+	          <div class="btn-group">
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+</div><!-- /btn-group -->
+			</div>
+			<div class="tab-pane" id="code39">
+			<pre class="brush: html;">
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary">Primary</button>
+					<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="visually-hidden">Toggle Dropdown</span>
+					</button>
+					
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Separated link</a>
+					</div>
+				</div><!-- /btn-group -->
+			
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+	     
+		 <div class="card  mt-4">
+          <div class="card-header">
+             <h5>SIZING</h5>
+          </div>
+          <div class="card-body">
+	        <p>Button dropdowns work with buttons of all sizes, including default and split dropdown buttons.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview40" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code40" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview40">
+	           <!-- Large button groups (default and split) -->
+<div class="btn-group">
+    <button class="btn btn-light btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Large button
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+</div>
+<div class="btn-group">
+    <button class="btn btn-light btn-lg" type="button">
+        Large button
+    </button>
+    <button type="button" class="btn btn-lg btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+</div>
+            
+<!-- Small button groups (default and split) -->
+<div class="btn-group">
+    <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Small button
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+</div>
+<div class="btn-group">
+    <button class="btn btn-light btn-sm" type="button">
+        Small button
+    </button>
+    <button type="button" class="btn btn-sm btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+</div><!-- /btn-group -->
+          
+			</div>
+			<div class="tab-pane" id="code40">
+			<pre class="brush: html;">
+				
+				<!-- Large button groups (default and split) -->
+				<div class="btn-group">
+					<button class="btn btn-light btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Large button
+					</button>
+					
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Separated link</a>
+					</div>
+				</div>
+				
+				<div class="btn-group">
+					<button class="btn btn-light btn-lg" type="button">
+					Large button
+					</button>
+					<button type="button" class="btn btn-lg btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="visually-hidden">Toggle Dropdown</span>
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Separated link</a>
+					</div>
+				</div>
+				
+				<!-- Small button groups (default and split) -->
+				<div class="btn-group">
+					<button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Small button
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Separated link</a>
+					</div>
+				</div>
+				
+				<div class="btn-group">
+					<button class="btn btn-light btn-sm" type="button">
+					Small button
+					</button>
+					<button type="button" class="btn btn-sm btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="visually-hidden">Toggle Dropdown</span>
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Separated link</a>
+					</div>
+				</div><!-- /btn-group -->
+				
+			</pre>
+			</div>
+			</div>  
+          </div>
+      </div>
+		 
+		 <div class="card  mt-4">
+          <div class="card-header">
+            <h5>DROPSTART VARIATION</h5>
+          </div>
+          <div class="card-body">
+	        <p>Similarly, create split button dropdowns with virtually the same markup as single button dropdowns, but with the addition of .dropdown-toggle-split for proper spacing around the dropdown caret.</p>
+		    <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview41" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code41" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview41">
+               <!-- Default dropstart button -->
+<div class="btn-group dropstart">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropstart
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+</div>
+
+<!-- Split dropstart button -->
+<div class="btn-group">
+    <div class="btn-group dropstart" role="group">
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropstart</span>
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+    </div>
+    <button type="button" class="btn btn-secondary">
+        Split dropleft
+    </button>
+</div><!-- /btn-group -->          
+			</div>
+			<div class="tab-pane" id="code41">
+			<pre class="brush: html;">
+				<!-- Default dropstart button -->
+				<div class="btn-group dropstart">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Dropstart
+					</button>
+					
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Separated link</a>
+					</div>
+				</div>
+				
+				<!-- Split dropstart button -->
+				<div class="btn-group">
+					<div class="btn-group dropstart" role="group">
+						<button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">
+						  <span class="visually-hidden">Toggle Dropstart</span>
+						</button>
+						
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Separated link</a>
+						</div>
+					</div>
+					
+					<button type="button" class="btn btn-secondary">
+					Split dropleft
+					</button>
+				</div><!-- /btn-group -->
+						
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+	  
+	    <div class="card  mt-4">
+          <div class="card-header">
+            <h5>ACTIVE ITEM</h5>
+          </div>
+          <div class="card-body">
+	         <p>Add .active to item in the dropdown to style them as active.</p>
+		   <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview42" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code42" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview42">
+                 <!-- Active Item -->
+<div class="btn-group">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Active Menu
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Regular link</a>
+        <a class="dropdown-item active" href="#">Active link</a>
+        <a class="dropdown-item" href="#">Another link</a>
+    </div>
+</div><!-- /btn-group -->
+			</div>
+			<div class="tab-pane" id="code42">
+			<pre class="brush: html;">
+				<!-- Active Item -->
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Active Menu
+					</button>
+					
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Regular link</a>
+						<a class="dropdown-item active" href="#">Active link</a>
+						<a class="dropdown-item" href="#">Another link</a>
+					</div>
+				</div><!-- /btn-group -->
+						
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+	  
+	   <div class="card  mt-4">
+          <div class="card-header">
+             <h5>HEADERS</h5>
+          </div>
+          <div class="card-body">
+	          	  <p>Add a header to label sections of actions in any dropdown menu.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview43" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code43" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview43">
+                  <!-- Active Item -->
+<!-- Header Item -->
+<div class="btn-group">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Header
+    </button>
+    <div class="dropdown-menu">
+        <h6 class="dropdown-header">Dropdown header</h6>
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+    </div>
+</div><!-- /btn-group -->
+			</div>
+			<div class="tab-pane" id="code43">
+			<pre class="brush: html;">
+
+				<!-- Active Item -->
+				<!-- Header Item -->
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Header
+					</button>
+					
+					<div class="dropdown-menu">
+						<h6 class="dropdown-header">Dropdown header</h6>
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+					</div>
+				</div><!-- /btn-group -->
+						
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+	  
+	   <div class="card  mt-4">
+          <div class="card-header">
+              <h5>FORMS</h5>
+          </div>
+          <div class="card-body">
+	            <p>Put a form within a dropdown menu, or make it into a dropdown menu, and use margin or padding utilities to give it the negative space you require.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview44" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code44" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview44">
+               	<!-- Forms -->
+<div class="dropdown">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Form
+    </button>
+    <div class="dropdown-menu">
+        <form class="px-4 py-3">
+            <div class="mb-3">
+                <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+            </div>
+            <div class="mb-3">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                    <label class="form-check-label" for="dropdownCheck">
+                        Remember me
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">New around here? Sign up</a>
+        <a class="dropdown-item" href="#">Forgot password?</a>
+    </div>
+</div>
+			</div>
+			<div class="tab-pane" id="code44">
+			<pre class="brush: html;">
+				
+				<!-- Forms -->
+				<div class="dropdown">
+					<button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Form
+					</button>
+					
+					<div class="dropdown-menu">
+						<form class="px-4 py-3">
+							<div class="mb-3">
+								<label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+								<input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+							</div>
+							
+							<div class="mb-3">
+								<label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+								<input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+							</div>
+							
+							<div class="mb-3">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="dropdownCheck">
+									<label class="form-check-label" for="dropdownCheck">
+									Remember me
+									</label>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-primary">Sign in</button>
+						</form>
+						<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">New around here? Sign up</a>
+							<a class="dropdown-item" href="#">Forgot password?</a>
+					</div>
+				</div>		
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+
+		</div>
+	   </div>
+	   
+	   
+    </main>
+  </div>
+</div>
+
+<section id="footer">
+ <div class="container-fluid">
+  <div class="row footer">
+	   <div class="col-md-8">
+	    <div class="footer_1l">
+		  <p class="mb-0 text-light">© 2013 Your Website Name. All Rights Reserved | Design by <a class="col_1 font-weight-bold" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+		</div>
+	   </div>
+	   <div class="col-md-4">
+	    <div class="footer_1r" style="text-align:right;">
+		 <ul class="mb-0">
+		  <li class="d-inline font_14"><a class="text-light" href="#">About </a></li>
+		  <li class="d-inline font_14"><a class="text-light" href="#">Support </a></li>
+		  <li class="d-inline font_14"><a class="text-light" href="#">Contact Us </a></li>
+		 </ul>
+		</div>
+	   </div>
+	  </div>
+ </div>
+</section>
+
+
+<script src="js/bootstrap.bundle.min.js" ></script>
+
+</script><script src="js/global.js"></script>
+  
+
+</body></html>

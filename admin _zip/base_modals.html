@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Android Example Admin Console</title>
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+<link href="css/font-awesome.min.css" rel="stylesheet" >
+<link href="css/style.css" rel="stylesheet">
+<link href="css/nav.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/shCoreEclipse.css"/>
+<link type="text/css" rel="Stylesheet" href="css/shThemeEclipse.css" />
+<link href="css/global.css" rel="stylesheet">
+<link href="css/baseui.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<script type="text/javascript" src="js/XRegExp.js"></script>
+<script type="text/javascript" src="js/shCore.js"></script>
+<script type="text/javascript" src="js/shBrushXml.js"></script>
+<script type="text/javascript">
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+    SyntaxHighlighter.all();
+</script>
+
+</head>
+<body>
+    
+    
+<header class="navbar navbar-dark  bg-dark flex-md-nowrap p-0 shadow header_b">
+  
+  <div class="col-md-2">
+    <div class="header_topl">
+	 <h4 class="mb-0" style="font-size:1.5rem; padding-top:4px; padding-left:15px;"><a class="col_1" href="dashboard_n.html">ADMINISTRATOR</a></h4>
+	</div>
+  </div>
+  <div class="col-md-10">
+   <div class="header_topr" style="float:right;">
+     <ul class="nav hide">
+  <li class="nav-item sign_box_1">
+    <a class="nav-link  text-dark" href="#"><i class="fa fa-home col_7"></i> Home</a>
+  </li>
+  <li class="nav-item sign_box_1">
+    <a class="nav-link  text-dark" href="#"><i class="fa fa-comment col_7"></i> 3</a>
+  </li>
+  <li class="nav-item sign_box_1">
+    <a class="nav-link  text-dark" href="#"><i class="fa fa-plus col_7"></i> New</a>
+  </li>
+  
+  <li class="nav-item dropdown notification">
+    <a class="nav-link dropdown-toggle text-white  border-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><button type="button" class="border-0 btn  col_7  position-relative">
+  <i class="fa fa-bell"></i>
+  <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger" style="top:5px;">
+    3+
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button></a>
+    <ul class="dropdown-menu drop_1" style="left:auto; right:0;  min-width:300px;">
+	  <li class="noti_p">Notification <span class="pull-right"><a href="#">Clear All</a></span></li>
+      <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1 border-0">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+    </ul>
+  </li>
+  <li class="nav-item sign_box dropdown">
+    <a class="nav-link dropdown-toggle text-dark  border-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img alt="abc" class="rounded-circle" width="30"height="30" src="img/1.jpg">Eget Nulla</a>
+      <ul class="dropdown-menu drop_2" style="left:auto; right:0; min-width:200px;">
+	  <li class="small" style="padding: 0.25rem 1rem;">Welcome !</li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> My Account</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-gear"></i> Settings</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-life-bouy"></i> Support</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Lock Screen</a></li>
+	  <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+    </ul>
+  </li>
+</ul>
+   </div>
+  </div>
+  
+</header>
+
+<section id="menu_big" class="sticky-top">
+<nav class="navbar navbar-expand-md navbar-light bg-light p-0">
+  <div class="container-fluid">
+    <a class="navbar-brand col_1" style="padding-top:2px; padding-bottom:0;" href="dashboard_n.html">ADMINISTRATOR</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-lg-0">
+	    <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            <i style="margin-right:5px;" class="fa fa-home"></i> Home
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+		    <li><a class="dropdown-item" href="dashboard_n.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Dashboard</a></li>
+            <li><a class="dropdown-item" href="form.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Form</a></li>
+            <li><a class="dropdown-item" href="list.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> List</a></li>
+          </ul>
+        </li>
+		
+		
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b active_tag" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-diamond"></i> Base UI
+          </a>
+          <ul class="dropdown-menu drop_b1 drop_b2" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="base_accordions.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Accordions</a></li>
+            <li><a class="dropdown-item" href="base_alerts.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Alerts</a></li>
+			 <li><a class="dropdown-item" href="base_badges.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Badges</a></li>
+			  <li><a class="dropdown-item" href="base_breadcrumb.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Breadcrumb</a></li>
+            <li><a class="dropdown-item" href="base_buttons.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Buttons</a></li>
+			 <li><a class="dropdown-item" href="base_card.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Cards</a></li>
+			 <li><a class="dropdown-item" href="base_carousel.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Carousel</a></li>
+			 <li><a class="dropdown-item" href="base_dropdown.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Dropdowns</a></li>
+			  <li><a class="dropdown-item" href="base_grid.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Grid</a></li>
+            <li><a class="dropdown-item" href="base_listgroup.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  List Group</a></li>
+			 <li><a class="dropdown-item active_tag" href="base_modals.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Modals</a></li>
+			  <li><a class="dropdown-item" href="base_notifi.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Notifications</a></li>
+            <li><a class="dropdown-item" href="base_offcanvas.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Offcanvas</a></li>
+			 <li><a class="dropdown-item" href="base_placeh.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Placeholders</a></li>
+			 <li><a class="dropdown-item" href="base_pagination.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Pagination</a></li>
+			 <li><a class="dropdown-item" href="base_progress.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Progress</a></li>
+			 <li><a class="dropdown-item" href="base_spinners.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Spinners</a></li>
+			 <li><a class="dropdown-item" href="base_tabs.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Tabs</a></li>
+			 <li><a class="dropdown-item" href="base_tooltips.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Tooltips</a></li>
+			 <li><a class="dropdown-item" href="base_typo.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Typography</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-file"></i> Forms
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="form_basic.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Basic Elements</a></li>
+            <li><a class="dropdown-item" href="form_validation.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Validation</a></li>
+			 <li><a class="dropdown-item" href="form_wizard.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Wizard</a></li>
+
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-table"></i> Table
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="table_basic.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Basic Table</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-copy"></i> Pages
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a target="_blank" class="dropdown-item" href="authen_login.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Login</a></li>
+            <li><a target="_blank" class="dropdown-item" href="login2.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Login 2</a></li>
+			 <li><a target="_blank" class="dropdown-item" href="error.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Error</a></li>
+			  <li><a target="_blank" class="dropdown-item" href="authen_register.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Register</a></li>
+            <li><a target="_blank" class="dropdown-item" href="authen_logout.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Logout</a></li>
+			 <li><a target="_blank" class="dropdown-item" href="authen_recover.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Recover Password</a></li>
+			 <li><a target="_blank" class="dropdown-item" href="authen_lock_screen.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Lock Screen</a></li>
+			 <li><a target="_blank" class="dropdown-item" href="authen_confirm_mail.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Confirm Mail</a></li>
+			 
+			 <li><a  class="dropdown-item" href="profile.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Profile</a></li>
+          </ul>
+        </li>
+        
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-shopping-cart"></i> Ecommerce
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="ecommerce_prod.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Product</a></li>
+            <li><a class="dropdown-item" href="ecommerce_prod_details.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Product Details</a></li>
+			 <li><a class="dropdown-item" href="ecommerce_orders.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Order</a></li>
+            <li><a class="dropdown-item" href="ecommerce_orders_detail.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Order Details</a></li>
+			 <li><a class="dropdown-item" href="ecommerce_customers.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Customers</a></li>
+            <li><a class="dropdown-item" href="ecommerce_sellers.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Sellers</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-briefcase"></i> Projects
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="project_list.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Lists</a></li>
+            <li><a class="dropdown-item" href="project_list_detail.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Details</a></li>
+			 <li><a class="dropdown-item" href="create_project.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Create Project</a></li>
+          </ul>
+        </li>
+		
+
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</section>
+
+
+<div class="container-fluid">
+  <div class="row">
+    
+
+    <main class="col-md-9 ms-sm-auto common col-lg-10 px-md-4">
+       <div class="row crm_1">
+	   <div class="col-md-3">
+	    <div class="analytic_1l">
+		 <h5 class="mb-0">Modals</h5>
+		</div>
+	   </div>
+	   <div class="col-md-9">
+	    <div class="crm_1r pull-right">
+	      <ul>
+		   <li class="col_3 d-inline-block"><a href="#">Lorem</a> <i style="margin-left:5px; vertical-align:middle;" class="fa fa-chevron-right"></i></li>
+		   <li class="col_3 d-inline-block"><a href="#">Base UI</a> <i style="margin-left:5px; vertical-align:middle;" class="fa fa-chevron-right"></i></li>
+		   <li class="col_3 d-inline-block">Modals</li>
+		  </ul>
+		</div>
+	   </div>
+	  </div>
+       
+        <div class="row base_modal mt-2">
+	    <div class="col-md-6">
+		  <div class="card">
+          <div class="card-header">
+           <h5>BOOTSTRAP MODALS</h5>
+          </div>
+          <div class="card-body">
+	         <p>A rendered modal with header, body, and set of actions in the footer.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview57" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code57" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview57">
+               <!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+		  Launch demo modal
+		</button>
+
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg">Large Modal</button>
+		
+		<div class="modal fade" id="bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+					</div>
+					<div class="modal-body">
+					  <p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		
+		<button  type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bs-example-modal-sm">Small Modal</button>
+		<div class="modal fade" id="bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+					</div>
+					<div class="modal-body">
+						<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		
+		<button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#full-width-modal">Full width Modal</button>
+<div id="full-width-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fullWidthModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-full-width">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="full-width-modal">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+		
+		<button  type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#scrollable-modal">Scrollable Modal</button>
+		<div class="modal fade" id="scrollable-modal" tabindex="-1" role="dialog" aria-labelledby="scrollableModalTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-scrollable" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="scrollableModalTitle">Modal title</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+					</div>
+					<div class="modal-body">
+						<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+						<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+						<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+						<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+						<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+						<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>   
+			</div>
+			<div class="tab-pane" id="code57">
+			<pre class="brush: html;">
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				  Launch demo modal
+				</button>
+				
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg">Large Modal</button>
+				
+				<div class="modal fade" id="bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+							  <p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div>
+				
+				<button  type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bs-example-modal-sm">Small Modal</button>
+				
+				<div class="modal fade" id="bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div>
+				
+				<button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#full-width-modal">Full width Modal</button>
+				
+				<div id="full-width-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fullWidthModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-full-width">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="full-width-modal">Modal Heading</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div>
+				
+				<button  type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#scrollable-modal">Scrollable Modal</button>
+				
+				<div class="modal fade" id="scrollable-modal" tabindex="-1" role="dialog" aria-labelledby="scrollableModalTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-scrollable" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="scrollableModalTitle">Modal title</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div>
+			</pre>
+			</div>
+			</div> 
+          </div>
+      </div>
+		  
+		</div>
+         <div class="col-md-6">
+		  <div class="card">
+          <div class="card-header">
+             <h5>MODAL WITH PAGES</h5>
+          </div>
+          <div class="card-body">
+	          <p>Examples of custom modals.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview58" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code58" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview58">
+               <!-- Signup modal-->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup-modal">Sign Up Modal</button>
+<div id="signup-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="text-center mt-2 mb-4">
+                    <a href="index.html" class="text-success">
+                        <span><img src="img/1.jpg" alt="" height="18"></span>
+                    </a>
+                </div>
+
+                <form class="ps-3 pe-3" action="#">
+
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Name</label>
+                        <input class="form-control" type="email" id="username" required="" placeholder="Michael Zenaty">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="emailaddress" class="form-label">Email address</label>
+                        <input class="form-control" type="email" id="emailaddress" required="" placeholder="john@deo.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input class="form-control" type="password" required="" id="password" placeholder="Enter your password">
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="customCheck1">
+                            <label class="form-check-label" for="customCheck1">I accept <a href="#">Terms and Conditions</a></label>
+                        </div> 
+                    </div>
+
+                    <div class="mb-3 text-center">
+                        <button class="btn btn-primary" type="submit">Sign Up Free</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Login modal -->
+<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#login-modal">Log In Modal</button>
+<div id="login-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="text-center mt-2 mb-4">
+                    <a href="index.html" class="text-success">
+                        <span><img src="img/1.jpg" alt="" height="18"></span>
+                    </a>
+                </div>
+
+                <form action="#" class="ps-3 pe-3">
+
+                    <div class="mb-3">
+                        <label for="emailaddress1" class="form-label">Email address</label>
+                        <input class="form-control" type="email" id="emailaddress1" required="" placeholder="john@deo.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password1" class="form-label">Password</label>
+                        <input class="form-control" type="password" required="" id="password1" placeholder="Enter your password">
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="customCheck2">
+                            <label class="form-check-label" for="customCheck2">Remember me</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 text-center">
+                        <button class="btn rounded-pill btn-primary" type="submit">Sign In</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+			</div>
+			<div class="tab-pane" id="code58">
+			<pre class="brush: html;">
+				<!-- Signup modal-->
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup-modal">Sign Up Modal</button>
+				<div id="signup-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+						
+							<div class="modal-body">
+								<div class="text-center mt-2 mb-4">
+									<a href="index.html" class="text-success">
+										<span><img src="img/1.jpg" alt="" height="18"></span>
+									</a>
+								</div>
+								
+								<form class="ps-3 pe-3" action="#">
+								
+									<div class="mb-3">
+										<label for="username" class="form-label">Name</label>
+										<input class="form-control" type="email" id="username" required="" placeholder="Michael Zenaty">
+									</div>
+									
+									<div class="mb-3">
+										<label for="emailaddress" class="form-label">Email address</label>
+										<input class="form-control" type="email" id="emailaddress" required="" placeholder="john@deo.com">
+									</div>
+									
+									<div class="mb-3">
+										<label for="password" class="form-label">Password</label>
+										<input class="form-control" type="password" required="" id="password" placeholder="Enter your password">
+									</div>
+									
+									<div class="mb-3">
+										<div class="form-check">
+											<input type="checkbox" class="form-check-input" id="customCheck1">
+											<label class="form-check-label" for="customCheck1">I accept <a href="#">Terms and Conditions</a></label>
+										</div> 
+									</div>
+									
+									<div class="mb-3 text-center">
+										<button class="btn btn-primary" type="submit">Sign Up Free</button>
+									</div>
+								
+								</form>
+							
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<!-- Login modal -->
+				<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#login-modal">Log In Modal</button>
+				<div id="login-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+								<div class="text-center mt-2 mb-4">
+									<a href="index.html" class="text-success">
+										<span><img src="img/1.jpg" alt="" height="18"></span>
+									</a>
+								</div>
+								
+								<form action="#" class="ps-3 pe-3">
+								
+									<div class="mb-3">
+										<label for="emailaddress1" class="form-label">Email address</label>
+										<input class="form-control" type="email" id="emailaddress1" required="" placeholder="john@deo.com">
+									</div>
+									
+									<div class="mb-3">
+										<label for="password1" class="form-label">Password</label>
+										<input class="form-control" type="password" required="" id="password1" placeholder="Enter your password">
+									</div>
+									
+									<div class="mb-3">
+										<div class="form-check">
+											<input type="checkbox" class="form-check-input" id="customCheck2">
+											<label class="form-check-label" for="customCheck2">Remember me</label>
+										</div>
+									</div>
+									
+									<div class="mb-3 text-center">
+										<button class="btn rounded-pill btn-primary" type="submit">Sign In</button>
+									</div>
+								
+								</form>
+							
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>		
+	   </div>
+	   
+	    <div class="row base_modal mt-4">
+	    <div class="col-md-6">
+		  <div class="card">
+          <div class="card-header">
+             <h5>MODAL BASED ALERTS</h5>
+          </div>
+          <div class="card-body">
+	          <p>Show different contexual alert messages using modal component</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview59" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code59" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview59">
+               <!-- Success Alert Modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#success-alert-modal">Success Alert</button>
+<div id="success-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content modal-filled bg-success">
+            <div class="modal-body p-4">
+                <div class="text-center">
+                    <i style="font-size:30px;" class="fa fa-check"></i>
+                    <h4 class="mt-2">Well Done!</h4>
+                    <p class="mt-3">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Info Alert Modal -->
+<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#info-alert-modal">Info Alert</button>
+<div id="info-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body p-4">
+                <div class="text-center">
+                    <i style="font-size:30px;" class="fa fa-info text-info"></i>
+                    <h4 class="mt-2">Heads up!</h4>
+                    <p class="mt-3">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    <button type="button" class="btn btn-info my-2" data-bs-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Warning Alert Modal -->
+<button  type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#warning-alert-modal">Warning Alert</button>
+<div id="warning-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body p-4">
+                <div class="text-center">
+                    <i style="font-size:30px;" class="fa fa-warning text-warning"></i>
+                    <h4 class="mt-2">Incorrect Information</h4>
+                    <p class="mt-3">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    <button type="button" class="btn btn-warning my-2" data-bs-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Danger Alert Modal -->
+<button  type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#danger-alert-modal">Danger Alert</button>
+<div id="danger-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content modal-filled bg-danger">
+            <div class="modal-body p-4">
+                <div class="text-center">
+
+                    <i style="font-size:30px;" class="fa fa-ban"></i>
+                    <h4 class="mt-2">Oh snap!</h4>
+                    <p class="mt-3">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    <button type="button" class="btn btn-light my-2" data-bs-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+			</div>
+			<div class="tab-pane" id="code59">
+			<pre class="brush: html;">
+				<!-- Success Alert Modal -->
+				<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#success-alert-modal">Success Alert</button>
+				<div id="success-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content modal-filled bg-success">
+							<div class="modal-body p-4">
+								<div class="text-center">
+									<i style="font-size:30px;" class="fa fa-check"></i>
+									<h4 class="mt-2">Well Done!</h4>
+									<p class="mt-3">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+									<button type="button" class="btn btn-light my-2" data-bs-dismiss="modal">Continue</button>
+								</div>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<!-- Info Alert Modal -->
+				<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#info-alert-modal">Info Alert</button>
+				<div id="info-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
+							<div class="modal-body p-4">
+								<div class="text-center">
+									<i style="font-size:30px;" class="fa fa-info text-info"></i>
+									<h4 class="mt-2">Heads up!</h4>
+									<p class="mt-3">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+									<button type="button" class="btn btn-info my-2" data-bs-dismiss="modal">Continue</button>
+								</div>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<!-- Warning Alert Modal -->
+				<button  type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#warning-alert-modal">Warning Alert</button>
+				<div id="warning-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
+							<div class="modal-body p-4">
+								<div class="text-center">
+									<i style="font-size:30px;" class="fa fa-warning text-warning"></i>
+									<h4 class="mt-2">Incorrect Information</h4>
+									<p class="mt-3">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+									<button type="button" class="btn btn-warning my-2" data-bs-dismiss="modal">Continue</button>
+								</div>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<!-- Danger Alert Modal -->
+				<button  type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#danger-alert-modal">Danger Alert</button>
+				<div id="danger-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content modal-filled bg-danger">
+							<div class="modal-body p-4">
+								<div class="text-center">
+									<i style="font-size:30px;" class="fa fa-ban"></i>
+									<h4 class="mt-2">Oh snap!</h4>
+									<p class="mt-3">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+									<button type="button" class="btn btn-light my-2" data-bs-dismiss="modal">Continue</button>
+								</div>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+			</pre>
+			</div>
+			</div> 
+          </div>
+      </div>
+		  
+		</div>
+		<div class="col-md-6">
+		  <div class="card">
+          <div class="card-header">
+            <h5>MODAL POSITION</h5>
+          </div>
+          <div class="card-body">
+	         <p>Specify the position for the modal. You can display modal at top, bottom, center or right of page by specifying classes modal-top, modal-bottom, modal-dialog-centered and modal-right respectively.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview60" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code60" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview60">
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#top-modal">Top Modal</button>
+<div id="top-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-top">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="topModalLabel">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+             <p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+         <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#centermodal">Center modal</button>
+<div class="modal fade" id="centermodal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myCenterModalLabel">Center modal</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+			</div>
+			<div class="tab-pane" id="code60">
+			<pre class="brush: html;">
+				<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#top-modal">Top Modal</button>
+				<div id="top-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-top">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="topModalLabel">Modal Heading</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#centermodal">Center modal</button>
+				<div class="modal fade" id="centermodal" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="myCenterModalLabel">Center modal</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>
+         		
+	   </div>
+
+	    <div class="row base_modal mt-4">
+	    <div class="col-md-6">
+		  <div class="card">
+          <div class="card-header">
+            <h5>COLORED HEADER MODALS</h5>
+          </div>
+          <div class="card-body">
+	           <p>A rendered modal with header having contexual background color.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview61" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code61" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview61">
+               <!-- Primary Header Modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#primary-header-modal">Primary Header</button>
+<div id="primary-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="primary-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header modal-colored-header bg-primary">
+                <h4 class="modal-title" id="primary-header-modalLabel">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Success Header Modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#success-header-modal">Success Header</button>
+<div id="success-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="success-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header modal-colored-header bg-success">
+                <h4 class="modal-title" id="success-header-modalLabel">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+               <p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Info Header Modal -->
+<button  type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#info-header-modal">Info Header</button>
+<div id="info-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="info-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header modal-colored-header bg-info">
+                <h4 class="modal-title" id="info-header-modalLabel">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+               <p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Warning Header Modal -->
+<button  type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#warning-header-modal">Warning Header</button>
+<div id="warning-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="warning-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header modal-colored-header bg-warning">
+                <h4 class="modal-title" id="warning-header-modalLabel">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+               <p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-warning">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Danger Header Modal -->
+<button  type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#danger-header-modal">Danger Header</button>
+<div id="danger-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="danger-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header modal-colored-header bg-danger">
+                <h4 class="modal-title" id="danger-header-modalLabel">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+               <p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Dark Header Modal -->
+<button  type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#dark-header-modal">Dark Header</button>
+<div id="dark-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dark-header-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header modal-colored-header bg-dark">
+                <h4 class="modal-title col_5" id="dark-header-modalLabel">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-dark">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+			</div>
+			<div class="tab-pane" id="code61">
+			<pre class="brush: html;">
+				<!-- Primary Header Modal -->
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#primary-header-modal">Primary Header</button>
+				<div id="primary-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="primary-header-modalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header modal-colored-header bg-primary">
+								<h4 class="modal-title" id="primary-header-modalLabel">Modal Heading</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<!-- Success Header Modal -->
+				<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#success-header-modal">Success Header</button>
+				<div id="success-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="success-header-modalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header modal-colored-header bg-success">
+								<h4 class="modal-title" id="success-header-modalLabel">Modal Heading</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-success">Save changes</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<!-- Info Header Modal -->
+				<button  type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#info-header-modal">Info Header</button>
+				<div id="info-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="info-header-modalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header modal-colored-header bg-info">
+								<h4 class="modal-title" id="info-header-modalLabel">Modal Heading</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-info">Save changes</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<!-- Warning Header Modal -->
+				<button  type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#warning-header-modal">Warning Header</button>
+				<div id="warning-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="warning-header-modalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header modal-colored-header bg-warning">
+								<h4 class="modal-title" id="warning-header-modalLabel">Modal Heading</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-warning">Save changes</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<!-- Danger Header Modal -->
+				<button  type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#danger-header-modal">Danger Header</button>
+				<div id="danger-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="danger-header-modalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header modal-colored-header bg-danger">
+								<h4 class="modal-title" id="danger-header-modalLabel">Modal Heading</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-danger">Save changes</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<!-- Dark Header Modal -->
+				<button  type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#dark-header-modal">Dark Header</button>
+				<div id="dark-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dark-header-modalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header modal-colored-header bg-dark">
+								<h4 class="modal-title col_5" id="dark-header-modalLabel">Modal Heading</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-dark">Save changes</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>
+		<div class="col-md-6">
+		  <div class="card">
+          <div class="card-header">
+            <h5>FILLED MODALS</h5>
+          </div>
+          <div class="card-body">
+	           <p>A rendered modal with header, body and footer having contexual background color.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview62" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code62" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview62">
+                        <!-- Primary Filled Modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fill-primary-modal">Primary Filled</button>
+<div id="fill-primary-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-primary-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-filled bg-primary">
+            <div class="modal-header">
+                <h4 class="modal-title col_5" id="fill-primary-modalLabel">Primary Filled Modal</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+               <p class="mb-0 col_5">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-light">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Success Filled Modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#fill-success-modal">Success Filled</button>
+<div id="fill-success-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-success-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-filled bg-success">
+            <div class="modal-header">
+                <h4 class="modal-title col_5" id="fill-success-modalLabel">Success Filled Modal</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+               <p class="mb-0 col_5">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-light">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Info Filled Modal -->
+<button  type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#fill-info-modal">Info Filled</button>
+<div id="fill-info-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-info-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-filled bg-info">
+            <div class="modal-header">
+                <h4 class="modal-title col_5" id="fill-info-modalLabel">Info Filled Modal</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+               <p class="mb-0 col_5">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-light">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Warning Filled Modal -->
+<button  type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#fill-warning-modal">Warning Filled</button>
+<div id="fill-warning-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-warning-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-filled bg-warning">
+            <div class="modal-header">
+                <h4 class="modal-title col_5" id="fill-warning-modalLabel">Warning Filled Modal</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-0 col_5">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-light">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Danger Filled Modal -->
+<button  type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#fill-danger-modal">Danger Filled</button>
+<div id="fill-danger-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-danger-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-filled bg-danger">
+            <div class="modal-header">
+                <h4 class="modal-title col_5" id="fill-danger-modalLabel">Danger Filled Modal</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+               <p class="mb-0 col_5">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-light">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Dark Filled Modal -->
+<button  type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#fill-dark-modal">Dark Filled</button>
+<div id="fill-dark-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-dark-modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-filled bg-dark">
+            <div class="modal-header">
+                <h4 class="modal-title col_5" id="fill-dark-modalLabel">Dark Filled Modal</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-0 col_5">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-light">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+			</div>
+			<div class="tab-pane" id="code62">
+			<pre class="brush: html;">
+				<!-- Primary Filled Modal -->
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fill-primary-modal">Primary Filled</button>
+				<div id="fill-primary-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-primary-modalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content modal-filled bg-primary">
+							<div class="modal-header">
+								<h4 class="modal-title col_5" id="fill-primary-modalLabel">Primary Filled Modal</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0 col_5">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-outline-light">Save changes</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<!-- Success Filled Modal -->
+				<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#fill-success-modal">Success Filled</button>
+				<div id="fill-success-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-success-modalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content modal-filled bg-success">
+							<div class="modal-header">
+								<h4 class="modal-title col_5" id="fill-success-modalLabel">Success Filled Modal</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0 col_5">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-outline-light">Save changes</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<!-- Info Filled Modal -->
+				<button  type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#fill-info-modal">Info Filled</button>
+				<div id="fill-info-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-info-modalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content modal-filled bg-info">
+							<div class="modal-header">
+								<h4 class="modal-title col_5" id="fill-info-modalLabel">Info Filled Modal</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0 col_5">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-outline-light">Save changes</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<!-- Warning Filled Modal -->
+				<button  type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#fill-warning-modal">Warning Filled</button>
+				<div id="fill-warning-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-warning-modalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content modal-filled bg-warning">
+							<div class="modal-header">
+								<h4 class="modal-title col_5" id="fill-warning-modalLabel">Warning Filled Modal</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0 col_5">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-outline-light">Save changes</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<!-- Danger Filled Modal -->
+				<button  type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#fill-danger-modal">Danger Filled</button>
+				<div id="fill-danger-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-danger-modalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content modal-filled bg-danger">
+							<div class="modal-header">
+								<h4 class="modal-title col_5" id="fill-danger-modalLabel">Danger Filled Modal</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0 col_5">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-outline-light">Save changes</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<!-- Dark Filled Modal -->
+				<button  type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#fill-dark-modal">Dark Filled</button>
+				<div id="fill-dark-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-dark-modalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content modal-filled bg-dark">
+							<div class="modal-header">
+								<h4 class="modal-title col_5" id="fill-dark-modalLabel">Dark Filled Modal</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div>
+							<div class="modal-body">
+								<p class="mb-0 col_5">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-outline-light">Save changes</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->	
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>
+         		
+	   </div>
+	   
+	    <div class="row base_modal mt-4">
+	    <div class="col-md-6">
+		  <div class="card">
+          <div class="card-header">
+            <h5>MULTIPLE MODAL</h5>
+          </div>
+          <div class="card-body">
+	         	  
+		  <p>Display a series of modals one by one to guide your users on multiple aspects or take step wise input.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview63" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code63" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview63">
+                 <!-- Modal -->
+<div id="multiple-one" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="multiple-oneModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="multiple-oneModalLabel">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5 class="mt-0">Text in a modal</h5>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-target="#multiple-two" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Modal -->
+<div id="multiple-two" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="multiple-twoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="multiple-twoModalLabel">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5 class="mt-0">Text in a modal</h5>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+                    
+<div class="button-list">
+    <!-- Multiple modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#multiple-one">Multiple Modal</button>
+</div>
+			</div>
+			<div class="tab-pane" id="code63">
+			<pre class="brush: html;">
+				<!-- Modal -->
+				<div id="multiple-one" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="multiple-oneModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="multiple-oneModalLabel">Modal Heading</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5 class="mt-0">Text in a modal</h5>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" data-bs-target="#multiple-two" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<!-- Modal -->
+				<div id="multiple-two" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="multiple-twoModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="multiple-twoModalLabel">Modal Heading</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5 class="mt-0">Text in a modal</h5>
+								<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<div class="button-list">
+					<!-- Multiple modal -->
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#multiple-one">Multiple Modal</button>
+				</div>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+	  
+	      <div class="card mt-4">
+          <div class="card-header">
+            <h5>STATIC BACKDROP</h5>
+          </div>
+          <div class="card-body">
+	          <p>When backdrop is set to static, the modal will not close when clicking outside it. Click the button below to try it.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview64" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code64" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview64">
+                      <!-- Static Backdrop modal -->
+<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Static Backdrop
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div> <!-- end modal header -->
+            <div class="modal-body">
+                <p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+            </div> <!-- end modal footer -->
+        </div> <!-- end modal content-->
+    </div> <!-- end modal dialog-->
+</div> <!-- end modal-->    
+			</div>
+			<div class="tab-pane" id="code64">
+			<pre class="brush: html;">
+				<!-- Static Backdrop modal -->
+				<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+				  Static Backdrop
+				</button>
+				
+				<!-- Modal -->
+				<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+							</div> <!-- end modal header -->
+							<div class="modal-body">
+								<p class="mb-0">Nullam Facilisis Elit Velit, In Rutrum Felis Iaculis A. In Hac Habitasse Platea Dictumst. Cras Mi Libero, Iaculis Ac Diam Eget, Tristique Vestibulum Sem. Pellentesque Lobortis Vel Enim Non Tincidunt. Nam Pharetra Pellentesque Viverra.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Understood</button>
+							</div> <!-- end modal footer -->
+						</div> <!-- end modal content-->
+					</div> <!-- end modal dialog-->
+				</div> <!-- end modal-->   
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>
+		<div class="col-md-6">
+		  <div class="card">
+          <div class="card-header">
+             <h5>TOGGLE BETWEEN MODALS</h5>
+          </div>
+          <div class="card-body">
+	          <p>Toggle between multiple modals with some clever placement of the data-bs-target and data-bs-toggle attributes.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview65" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code65" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview65">
+                  <!-- Modal -->
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Show a second modal and hide this one with the button below.
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Open second modal</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+                
+<!-- Modal -->
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Hide this modal and show the first with the button below.
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Back to first</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+                    
+<a class="btn btn-secondary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>    
+			</div>
+			<div class="tab-pane" id="code65">
+			<pre class="brush: html;">
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+				tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+							  Show a second modal and hide this one with the button below.
+							</div>
+							<div class="modal-footer">
+								<button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+								data-bs-dismiss="modal">Open second modal</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+				tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+							  Hide this modal and show the first with the button below.
+							</div>
+							<div class="modal-footer">
+								<button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+								data-bs-dismiss="modal">Back to first</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
+				<a class="btn btn-secondary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> 
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>
+         		
+	   </div>
+			   
+	   
+    </main>
+  </div>
+</div>
+
+<section id="footer">
+ <div class="container-fluid">
+  <div class="row footer">
+	   <div class="col-md-8">
+	    <div class="footer_1l">
+		  <p class="mb-0 text-light">© 2013 Your Website Name. All Rights Reserved | Design by <a class="col_1 font-weight-bold" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+		</div>
+	   </div>
+	   <div class="col-md-4">
+	    <div class="footer_1r" style="text-align:right;">
+		 <ul class="mb-0">
+		  <li class="d-inline font_14"><a class="text-light" href="#">About </a></li>
+		  <li class="d-inline font_14"><a class="text-light" href="#">Support </a></li>
+		  <li class="d-inline font_14"><a class="text-light" href="#">Contact Us </a></li>
+		 </ul>
+		</div>
+	   </div>
+	  </div>
+ </div>
+</section>
+
+
+<script src="js/bootstrap.bundle.min.js" ></script>
+
+</script><script src="js/global.js"></script>
+  
+
+</body></html>

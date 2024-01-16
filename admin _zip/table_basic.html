@@ -1,0 +1,2405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Android Example Admin Console</title>
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+<link href="css/font-awesome.min.css" rel="stylesheet" >
+<link href="css/style.css" rel="stylesheet">
+<link href="css/nav.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/shCoreEclipse.css"/>
+<link type="text/css" rel="Stylesheet" href="css/shThemeEclipse.css" />
+<link href="css/global.css" rel="stylesheet">
+<link href="css/table.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<script type="text/javascript" src="js/XRegExp.js"></script>
+<script type="text/javascript" src="js/shCore.js"></script>
+<script type="text/javascript" src="js/shBrushXml.js"></script>
+<script type="text/javascript">
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+    SyntaxHighlighter.all();
+</script>
+
+</head>
+<body>
+    
+<header class="navbar navbar-dark  bg-dark flex-md-nowrap p-0 shadow header_b">
+  
+  <div class="col-md-2">
+    <div class="header_topl">
+	 <h4 class="mb-0" style="font-size:1.5rem; padding-top:4px; padding-left:15px;"><a class="col_1" href="dashboard_n.html">ADMINISTRATOR</a></h4>
+	</div>
+  </div>
+  <div class="col-md-10">
+   <div class="header_topr" style="float:right;">
+     <ul class="nav hide">
+  <li class="nav-item sign_box_1">
+    <a class="nav-link  text-dark" href="#"><i class="fa fa-home col_7"></i> Home</a>
+  </li>
+  <li class="nav-item sign_box_1">
+    <a class="nav-link  text-dark" href="#"><i class="fa fa-comment col_7"></i> 3</a>
+  </li>
+  <li class="nav-item sign_box_1">
+    <a class="nav-link  text-dark" href="#"><i class="fa fa-plus col_7"></i> New</a>
+  </li>
+  
+  <li class="nav-item dropdown notification">
+    <a class="nav-link dropdown-toggle text-white  border-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><button type="button" class="border-0 btn  col_7  position-relative">
+  <i class="fa fa-bell"></i>
+  <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger" style="top:5px;">
+    3+
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button></a>
+    <ul class="dropdown-menu drop_1" style="left:auto; right:0;  min-width:300px;">
+	  <li class="noti_p">Notification <span class="pull-right"><a href="#">Clear All</a></span></li>
+      <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1 border-0">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+    </ul>
+  </li>
+  <li class="nav-item sign_box dropdown">
+    <a class="nav-link dropdown-toggle text-dark  border-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img alt="abc" class="rounded-circle" width="30"height="30" src="img/1.jpg">Eget Nulla</a>
+      <ul class="dropdown-menu drop_2" style="left:auto; right:0; min-width:200px;">
+	  <li class="small" style="padding: 0.25rem 1rem;">Welcome !</li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> My Account</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-gear"></i> Settings</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-life-bouy"></i> Support</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Lock Screen</a></li>
+	  <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+    </ul>
+  </li>
+</ul>
+   </div>
+  </div>
+  
+</header>
+
+<section id="menu_big" class="sticky-top">
+<nav class="navbar navbar-expand-md navbar-light bg-light p-0">
+  <div class="container-fluid">
+    <a class="navbar-brand col_1" style="padding-top:2px; padding-bottom:0;" href="dashboard_n.html">ADMINISTRATOR</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-lg-0">
+	    <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            <i style="margin-right:5px;" class="fa fa-home"></i> Home
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+		    <li><a class="dropdown-item" href="dashboard_n.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Dashboard</a></li>
+            <li><a class="dropdown-item" href="form.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Form</a></li>
+            <li><a class="dropdown-item" href="list.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> List</a></li>
+          </ul>
+        </li>
+		
+		
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-diamond"></i> Base UI
+          </a>
+          <ul class="dropdown-menu drop_b1 drop_b2" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="base_accordions.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Accordions</a></li>
+            <li><a class="dropdown-item" href="base_alerts.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Alerts</a></li>
+			 <li><a class="dropdown-item" href="base_badges.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Badges</a></li>
+			  <li><a class="dropdown-item" href="base_breadcrumb.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Breadcrumb</a></li>
+            <li><a class="dropdown-item" href="base_buttons.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Buttons</a></li>
+			 <li><a class="dropdown-item" href="base_card.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Cards</a></li>
+			 <li><a class="dropdown-item" href="base_carousel.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Carousel</a></li>
+			 <li><a class="dropdown-item" href="base_dropdown.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Dropdowns</a></li>
+			  <li><a class="dropdown-item" href="base_grid.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Grid</a></li>
+            <li><a class="dropdown-item" href="base_listgroup.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  List Group</a></li>
+			 <li><a class="dropdown-item" href="base_modals.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Modals</a></li>
+			  <li><a class="dropdown-item" href="base_notifi.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Notifications</a></li>
+            <li><a class="dropdown-item" href="base_offcanvas.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Offcanvas</a></li>
+			 <li><a class="dropdown-item" href="base_placeh.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Placeholders</a></li>
+			 <li><a class="dropdown-item" href="base_pagination.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Pagination</a></li>
+			 <li><a class="dropdown-item" href="base_progress.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Progress</a></li>
+			 <li><a class="dropdown-item" href="base_spinners.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Spinners</a></li>
+			 <li><a class="dropdown-item" href="base_tabs.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Tabs</a></li>
+			 <li><a class="dropdown-item" href="base_tooltips.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Tooltips</a></li>
+			 <li><a class="dropdown-item" href="base_typo.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Typography</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-file"></i> Forms
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="form_basic.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Basic Elements</a></li>
+            <li><a class="dropdown-item" href="form_validation.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Validation</a></li>
+			 <li><a class="dropdown-item" href="form_wizard.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Wizard</a></li>
+
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b active_tag" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-table"></i> Table
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item active_tag" href="table_basic.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Basic Table</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-copy"></i> Pages
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a target="_blank" class="dropdown-item" href="authen_login.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Login</a></li>
+            <li><a target="_blank" class="dropdown-item" href="login2.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Login 2</a></li>
+			 <li><a target="_blank" class="dropdown-item" href="error.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Error</a></li>
+			  <li><a target="_blank" class="dropdown-item" href="authen_register.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Register</a></li>
+            <li><a target="_blank" class="dropdown-item" href="authen_logout.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Logout</a></li>
+			 <li><a target="_blank" class="dropdown-item" href="authen_recover.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Recover Password</a></li>
+			 <li><a target="_blank" class="dropdown-item" href="authen_lock_screen.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Lock Screen</a></li>
+			 <li><a target="_blank" class="dropdown-item" href="authen_confirm_mail.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Confirm Mail</a></li>
+			 
+			 <li><a  class="dropdown-item" href="profile.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Profile</a></li>
+          </ul>
+        </li>
+        
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-shopping-cart"></i> Ecommerce
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="ecommerce_prod.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Product</a></li>
+            <li><a class="dropdown-item" href="ecommerce_prod_details.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Product Details</a></li>
+			 <li><a class="dropdown-item" href="ecommerce_orders.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Order</a></li>
+            <li><a class="dropdown-item" href="ecommerce_orders_detail.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Order Details</a></li>
+			 <li><a class="dropdown-item" href="ecommerce_customers.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Customers</a></li>
+            <li><a class="dropdown-item" href="ecommerce_sellers.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Sellers</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-briefcase"></i> Projects
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="project_list.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Lists</a></li>
+            <li><a class="dropdown-item" href="project_list_detail.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Details</a></li>
+			 <li><a class="dropdown-item" href="create_project.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Create Project</a></li>
+          </ul>
+        </li>
+		
+
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</section>
+
+
+<div class="container-fluid">
+  <div class="row">
+    
+
+    <main class="col-md-9 ms-sm-auto common col-lg-10 px-md-4">
+        <div class="row crm_1">
+	   <div class="col-md-3">
+	    <div class="analytic_1l">
+		 <h5 class="mb-0">Basic Tables</h5>
+		</div>
+	   </div>
+	   <div class="col-md-9">
+	    <div class="crm_1r pull-right">
+	      <ul>
+		   <li class="col_3 d-inline-block"><a href="#">Lorem</a> <i style="margin-left:5px; vertical-align:middle;" class="fa fa-chevron-right"></i></li>
+		   <li class="col_3 d-inline-block"><a href="#">Base UI</a> <i style="margin-left:5px; vertical-align:middle;" class="fa fa-chevron-right"></i></li>
+		   <li class="col_3 d-inline-block">Basic Tables</li>
+		  </ul>
+		</div>
+	   </div>
+	  </div>
+        
+
+        <div class="row table_bas mt-2">
+	    <div class="col-xl-6 col-md-12">
+		  <div class="card">
+          <div class="card-header">
+           <h5>BASIC EXAMPLE</h5>
+          </div>
+          <div class="card-body">
+              <p>For basic styling—light padding and only horizontal dividers—add the base class table to any table</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview132" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code132" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview132">
+               <div class="table-responsive">
+			    <table class="table table-centered mb-0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Date of Birth</th>
+            <th>Active?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+			  </div>
+			</div>
+			<div class="tab-pane" id="code132">
+			<pre class="brush: html;">
+				<div class="table-responsive">
+					<table class="table table-centered mb-0">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Phone Number</th>
+								<th>Date of Birth</th>
+								<th>Active?</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		   
+		</div>
+		<div class="col-xl-6 col-md-12">
+		   <div class="card">
+          <div class="card-header">
+          <h5>INVERSE TABLE</h5>
+          </div>
+          <div class="card-body">
+              <p>You can also invert the colors—with light text on dark backgrounds—with .table-dark.</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview133" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code133" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview133">
+               <div class="table-responsive">
+			    <table class="table table-dark mb-0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Date of Birth</th>
+            <th>Active?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+			  </div>
+			</div>
+			<div class="tab-pane" id="code133">
+			<pre class="brush: html;">
+				<div class="table-responsive">
+					<table class="table table-dark mb-0">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Phone Number</th>
+								<th>Date of Birth</th>
+								<th>Active?</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+	
+		</div>
+
+	   </div>
+	   
+	    <div class="row table_bas mt-4">
+	    <div class="col-xl-6 col-md-12">
+		   <div class="card">
+          <div class="card-header">
+           <h5>STRIPED ROWS</h5>
+          </div>
+          <div class="card-body">
+               <p>Use .table-striped to add zebra-striping to any table row within the tbody</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview134" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code134" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview134">
+               <table class="table table-striped table-centered mb-0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Date of Birth</th>
+            <th>Active?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+			</div>
+			<div class="tab-pane" id="code134">
+			<pre class="brush: html;">
+				<table class="table table-striped table-centered mb-0">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Phone Number</th>
+							<th>Date of Birth</th>
+							<th>Active?</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		   
+		   
+		</div>
+		
+        <div class="col-xl-6 col-md-12">
+		   <div class="card">
+          <div class="card-header">
+           <h5>TABLE HEAD OPTIONS</h5>
+          </div>
+          <div class="card-body">
+              <p>Use one of two modifier classes to make <thead>s appear light or dark gray.</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview135" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code135" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview135">
+               <table class="table table-centered mb-0">
+    <thead class="table-dark">
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Date of Birth</th>
+            <th>Active?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+			</div>
+			<div class="tab-pane" id="code135">
+			<pre class="brush: html;">
+				<table class="table table-centered mb-0">
+					<thead class="table-dark">
+						<tr>
+							<th>Name</th>
+							<th>Phone Number</th>
+							<th>Date of Birth</th>
+							<th>Active?</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		</div>
+	   </div>
+	   
+	    <div class="row table_bas mt-4">
+	    <div class="col-xl-6 col-md-12">
+		   <div class="card">
+          <div class="card-header">
+              <h5>HOVERABLE ROWS</h5>
+          </div>
+          <div class="card-body">
+            <p>Add .table-hover to enable a hover state on table rows within a tbody.</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview136" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code136" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview136">
+               <table class="table table-hover table-centered mb-0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Date of Birth</th>
+            <th>Active?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+			</div>
+			<div class="tab-pane" id="code136">
+			<pre class="brush: html;">
+				<table class="table table-hover table-centered mb-0">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Phone Number</th>
+							<th>Date of Birth</th>
+							<th>Active?</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		   
+		</div>
+		
+        <div class="col-xl-6 col-md-12">
+		  <div class="card">
+          <div class="card-header">
+               <h5>SMALL TABLE</h5>
+          </div>
+          <div class="card-body">
+               <p>Add .table-sm to make tables more compact by cutting cell padding in half.</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview137" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code137" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview137">
+               <table class="table table-sm table-centered mb-0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Date of Birth</th>
+            <th>Active?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+			</div>
+			<div class="tab-pane" id="code137">
+			<pre class="brush: html;">
+				<table class="table table-sm table-centered mb-0">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Phone Number</th>
+							<th>Date of Birth</th>
+							<th>Active?</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		   
+		   
+		</div>
+	   </div>
+	   
+	    <div class="row table_bas mt-4">
+	    <div class="col-xl-6 col-md-12">
+		   <div class="card">
+          <div class="card-header">
+             <h5>BORDERED TABLE</h5> 
+          </div>
+          <div class="card-body">
+             <p>Add .table-bordered for borders on all sides of the table and cells.</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview138" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code138" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview138">
+               <table class="table table-bordered table-centered mb-0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Date of Birth</th>
+            <th>Active?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+			</div>
+			<div class="tab-pane" id="code138">
+			<pre class="brush: html;">
+				<table class="table table-bordered table-centered mb-0">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Phone Number</th>
+							<th>Date of Birth</th>
+							<th>Active?</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		   
+		   
+		</div>
+		<div class="col-xl-6 col-md-12">
+		   <div class="card">
+          <div class="card-header">
+             <h5>BORDERED COLOR TABLE</h5>
+          </div>
+          <div class="card-body">
+              <p>Add .table-bordered & .border-primary can be added to change colors</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview139" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code139" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview139">
+               <table class="table table-bordered border-primary table-centered mb-0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Date of Birth</th>
+            <th>Active?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+			</div>
+			<div class="tab-pane" id="code139">
+			<pre class="brush: html;">
+				<table class="table table-bordered border-primary table-centered mb-0">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Phone Number</th>
+							<th>Date of Birth</th>
+							<th>Active?</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Semp D. Pearson</td>
+							<td>123-456-7890</td>
+							<td>July 24, 1980</td>
+							<td>
+							<!-- Switch-->
+								<div>
+									<input type="checkbox" id="switch1" checked data-switch="success"/>
+									<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+	
+		</div>
+        
+	   </div>
+	   
+	    <div class="row table_bas mt-4">
+	    <div class="col-md-12">
+		   <div class="card">
+          <div class="card-header">
+             <h5>ALWAYS RESPONSIVE</h5>
+          </div>
+          <div class="card-body">
+              <p>Across every breakpoint, use .table-responsive for horizontally scrolling tables. Use .table-responsive{-sm|-md|-lg|-xl} as needed to create responsive tables up to a particular breakpoint. From that breakpoint and up, the table will behave normally and not scroll horizontally.</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview140" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code140" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview140">
+               <div class="table-responsive">
+<table class="table mb-0">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+			</div>
+			<div class="tab-pane" id="code140">
+			<pre class="brush: html;">
+				<div class="table-responsive">
+					<table class="table mb-0">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+	
+		</div>
+		
+        
+	   </div>
+	   
+	    <div class="row table_bas mt-4">
+	    <div class="col-xl-6 col-md-12">
+		   <div class="card">
+          <div class="card-header">
+            <h5>BASIC BORDERLESS EXAMPLE</h5>
+          </div>
+          <div class="card-body">
+              <p>Add .table-borderless for a table without borders.</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview141" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code141" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview141">
+               <table class="table table-centered table-borderless mb-0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Date of Birth</th>
+            <th>Active?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table> 
+			</div>
+			<div class="tab-pane" id="code141">
+			<pre class="brush: html;">
+				<div class="table-responsive">
+					<table class="table table-centered table-borderless mb-0">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Phone Number</th>
+								<th>Date of Birth</th>
+								<th>Active?</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		   
+		   
+		</div>
+		<div class="col-xl-6 col-md-12">
+		  <div class="card">
+          <div class="card-header">
+            <h5>INVERSE BORDERLESS TABLE</h5>
+          </div>
+          <div class="card-body">
+               <p>Add .table-borderless for a table without borders.</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview142" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code142" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview142">
+                <table class="table table-dark table-borderless mb-0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Date of Birth</th>
+            <th>Active?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+			</div>
+			<div class="tab-pane" id="code142">
+			<pre class="brush: html;">
+				<div class="table-responsive">
+					<table class="table table-dark table-borderless mb-0">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Phone Number</th>
+								<th>Date of Birth</th>
+								<th>Active?</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		   
+		</div>
+		
+        
+	   </div>
+	   
+	    <div class="row table_bas mt-4">
+	    <div class="col-xl-6 col-md-12">
+		   <div class="card">
+          <div class="card-header">
+            <h5>ACTIVE TABLES</h5>
+          </div>
+          <div class="card-body">
+                 <p>Highlight a table row or cell by adding a .table-active class.</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview143" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code143" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview143">
+                <table class="table  mb-0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Date of Birth</th>
+            <th>Active?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-active">
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td class="table-active">123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp D. Pearson</td>
+            <td>123-456-7890</td>
+            <td>July 24, 1980</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch1" checked data-switch="success"/>
+                    <label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+			</div>
+			<div class="tab-pane" id="code143">
+			<pre class="brush: html;">
+				<div class="table-responsive">
+					<table class="table  mb-0">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Phone Number</th>
+								<th>Date of Birth</th>
+								<th>Active?</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="table-active">
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td class="table-active">123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Semp D. Pearson</td>
+								<td>123-456-7890</td>
+								<td>July 24, 1980</td>
+								<td>
+								<!-- Switch-->
+									<div>
+										<input type="checkbox" id="switch1" checked data-switch="success"/>
+										<label for="switch1" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		   
+		   
+		</div>
+		
+		<div class="col-xl-6 col-md-12">
+		   <div class="card">
+          <div class="card-header">
+            <h5>NESTING</h5>
+          </div>
+          <div class="card-body">
+               <p>Border styles, active styles, and table variants are not inherited by nested tables.</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview144" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code144" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview144">
+                <div class="table-responsive">
+			    <table class="table table-striped mb-0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Date of Birth</th>
+            <th>Active?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Risa D. Pearson</td>
+            <td>336-508-2157</td>
+            <td>July 24, 1950</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch34" checked data-switch="success" />
+                    <label for="switch34" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <table class="table mb-0">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone Number</th>
+                            <th>Date of Birth</th>
+                            <th>Active?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                             <td>Semp G. Smith</td>
+            <td>123-456-7890</td>
+            <td>September 2, 1939</td>
+                            <td>
+                                <!-- Switch-->
+                                <div>
+                                    <input type="checkbox" id="switch35" checked data-switch="success" />
+                                    <label for="switch35" data-on-label="Yes" data-off-label="No"
+                                        class="mb-0 d-block"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                             <td>Semp G. Smith</td>
+            <td>123-456-7890</td>
+            <td>September 2, 1939</td>
+                            <td>
+                                <!-- Switch-->
+                                <div>
+                                    <input type="checkbox" id="switch36" data-switch="success" />
+                                    <label for="switch36" data-on-label="Yes" data-off-label="No"
+                                        class="mb-0 d-block"></label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Semp G. Smith</td>
+            <td>123-456-7890</td>
+            <td>September 2, 1939</td>
+            <td>
+                <!-- Switch-->
+                <div>
+                    <input type="checkbox" id="switch37" data-switch="success" />
+                    <label for="switch37" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+			  </div>
+			</div>
+			<div class="tab-pane" id="code144">
+			<pre class="brush: html;">
+				<div class="table-responsive">
+					<div class="table-responsive">
+						<table class="table table-striped mb-0">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Phone Number</th>
+									<th>Date of Birth</th>
+									<th>Active?</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Risa D. Pearson</td>
+									<td>336-508-2157</td>
+									<td>July 24, 1950</td>
+									<td>
+									<!-- Switch-->
+										<div>
+											<input type="checkbox" id="switch34" checked data-switch="success" />
+											<label for="switch34" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="4">
+										<table class="table mb-0">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Phone Number</th>
+													<th>Date of Birth</th>
+													<th>Active?</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Semp G. Smith</td>
+													<td>123-456-7890</td>
+													<td>September 2, 1939</td>
+													<td>
+													<!-- Switch-->
+														<div>
+															<input type="checkbox" id="switch35" checked data-switch="success" />
+															<label for="switch35" data-on-label="Yes" data-off-label="No"
+																class="mb-0 d-block"></label>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>Semp G. Smith</td>
+													<td>123-456-7890</td>
+													<td>September 2, 1939</td>
+													<td>
+													<!-- Switch-->
+														<div>
+															<input type="checkbox" id="switch36" data-switch="success" />
+															<label for="switch36" data-on-label="Yes" data-off-label="No"
+															class="mb-0 d-block"></label>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>Semp G. Smith</td>
+									<td>123-456-7890</td>
+									<td>September 2, 1939</td>
+									<td>
+									<!-- Switch-->
+										<div>
+											<input type="checkbox" id="switch37" data-switch="success" />
+											<label for="switch37" data-on-label="Yes" data-off-label="No" class="mb-0 d-block"></label>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</pre>
+			</div>
+			</div> 
+          </div>
+      </div>
+		   
+		</div>
+		
+		
+        
+	   </div>
+	   
+	   
+    </main>
+  </div>
+</div>
+
+<section id="footer">
+ <div class="container-fluid">
+  <div class="row footer">
+	   <div class="col-md-8">
+	    <div class="footer_1l">
+		  <p class="mb-0 text-light">© 2013 Your Website Name. All Rights Reserved | Design by <a class="col_1 font-weight-bold" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+		</div>
+	   </div>
+	   <div class="col-md-4">
+	    <div class="footer_1r" style="text-align:right;">
+		 <ul class="mb-0">
+		  <li class="d-inline font_14"><a class="text-light" href="#">About </a></li>
+		  <li class="d-inline font_14"><a class="text-light" href="#">Support </a></li>
+		  <li class="d-inline font_14"><a class="text-light" href="#">Contact Us </a></li>
+		 </ul>
+		</div>
+	   </div>
+	  </div>
+ </div>
+</section>
+
+
+<script src="js/bootstrap.bundle.min.js" ></script>
+
+</script><script src="js/global.js"></script>
+  
+
+</body></html>

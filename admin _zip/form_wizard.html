@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Android Example Admin Console</title>
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+<link href="css/font-awesome.min.css" rel="stylesheet" >
+<link href="css/style.css" rel="stylesheet">
+<link href="css/nav.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/shCoreEclipse.css"/>
+<link type="text/css" rel="Stylesheet" href="css/shThemeEclipse.css" />
+<link href="css/global.css" rel="stylesheet">
+<link href="css/form_1.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+   
+</head>
+<body>
+    
+<header class="navbar navbar-dark  bg-dark flex-md-nowrap p-0 shadow header_b">
+  
+  <div class="col-md-2">
+    <div class="header_topl">
+	 <h4 class="mb-0" style="font-size:1.5rem; padding-top:4px; padding-left:15px;"><a class="col_1" href="dashboard_n.html">ADMINISTRATOR</a></h4>
+	</div>
+  </div>
+  <div class="col-md-10">
+   <div class="header_topr" style="float:right;">
+     <ul class="nav hide">
+  <li class="nav-item sign_box_1">
+    <a class="nav-link  text-dark" href="#"><i class="fa fa-home col_7"></i> Home</a>
+  </li>
+  <li class="nav-item sign_box_1">
+    <a class="nav-link  text-dark" href="#"><i class="fa fa-comment col_7"></i> 3</a>
+  </li>
+  <li class="nav-item sign_box_1">
+    <a class="nav-link  text-dark" href="#"><i class="fa fa-plus col_7"></i> New</a>
+  </li>
+  
+  <li class="nav-item dropdown notification">
+    <a class="nav-link dropdown-toggle text-white  border-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><button type="button" class="border-0 btn  col_7  position-relative">
+  <i class="fa fa-bell"></i>
+  <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger" style="top:5px;">
+    3+
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button></a>
+    <ul class="dropdown-menu drop_1" style="left:auto; right:0;  min-width:300px;">
+	  <li class="noti_p">Notification <span class="pull-right"><a href="#">Clear All</a></span></li>
+      <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1 border-0">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+    </ul>
+  </li>
+  <li class="nav-item sign_box dropdown">
+    <a class="nav-link dropdown-toggle text-dark  border-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img alt="abc" class="rounded-circle" width="30"height="30" src="img/1.jpg">Eget Nulla</a>
+      <ul class="dropdown-menu drop_2" style="left:auto; right:0; min-width:200px;">
+	  <li class="small" style="padding: 0.25rem 1rem;">Welcome !</li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> My Account</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-gear"></i> Settings</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-life-bouy"></i> Support</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Lock Screen</a></li>
+	  <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+    </ul>
+  </li>
+</ul>
+   </div>
+  </div>
+  
+</header>
+
+<section id="menu_big" class="sticky-top">
+<nav class="navbar navbar-expand-md navbar-light bg-light p-0">
+  <div class="container-fluid">
+    <a class="navbar-brand col_1" style="padding-top:2px; padding-bottom:0;" href="dashboard_n.html">ADMINISTRATOR</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-lg-0">
+	    <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            <i style="margin-right:5px;" class="fa fa-home"></i> Home
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+		    <li><a class="dropdown-item" href="dashboard_n.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Dashboard</a></li>
+            <li><a class="dropdown-item" href="form.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Form</a></li>
+            <li><a class="dropdown-item" href="list.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> List</a></li>
+          </ul>
+        </li>
+		
+		
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-diamond"></i> Base UI
+          </a>
+          <ul class="dropdown-menu drop_b1 drop_b2" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="base_accordions.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Accordions</a></li>
+            <li><a class="dropdown-item" href="base_alerts.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Alerts</a></li>
+			 <li><a class="dropdown-item" href="base_badges.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Badges</a></li>
+			  <li><a class="dropdown-item" href="base_breadcrumb.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Breadcrumb</a></li>
+            <li><a class="dropdown-item" href="base_buttons.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Buttons</a></li>
+			 <li><a class="dropdown-item" href="base_card.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Cards</a></li>
+			 <li><a class="dropdown-item" href="base_carousel.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Carousel</a></li>
+			 <li><a class="dropdown-item" href="base_dropdown.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Dropdowns</a></li>
+			  <li><a class="dropdown-item" href="base_grid.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Grid</a></li>
+            <li><a class="dropdown-item" href="base_listgroup.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  List Group</a></li>
+			 <li><a class="dropdown-item" href="base_modals.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Modals</a></li>
+			  <li><a class="dropdown-item" href="base_notifi.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Notifications</a></li>
+            <li><a class="dropdown-item" href="base_offcanvas.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Offcanvas</a></li>
+			 <li><a class="dropdown-item" href="base_placeh.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Placeholders</a></li>
+			 <li><a class="dropdown-item" href="base_pagination.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Pagination</a></li>
+			 <li><a class="dropdown-item" href="base_progress.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Progress</a></li>
+			 <li><a class="dropdown-item" href="base_spinners.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Spinners</a></li>
+			 <li><a class="dropdown-item" href="base_tabs.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Tabs</a></li>
+			 <li><a class="dropdown-item" href="base_tooltips.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Tooltips</a></li>
+			 <li><a class="dropdown-item" href="base_typo.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Typography</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b active_tag" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-file"></i> Forms
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="form_basic.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Basic Elements</a></li>
+            <li><a class="dropdown-item" href="form_validation.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Validation</a></li>
+			 <li><a class="dropdown-item active_tag" href="form_wizard.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Wizard</a></li>
+
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-table"></i> Table
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="table_basic.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Basic Table</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-copy"></i> Pages
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a target="_blank" class="dropdown-item" href="authen_login.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Login</a></li>
+            <li><a target="_blank" class="dropdown-item" href="login2.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Login 2</a></li>
+			 <li><a target="_blank" class="dropdown-item" href="error.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Error</a></li>
+			  <li><a target="_blank" class="dropdown-item" href="authen_register.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Register</a></li>
+            <li><a target="_blank" class="dropdown-item" href="authen_logout.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Logout</a></li>
+			 <li><a target="_blank" class="dropdown-item" href="authen_recover.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Recover Password</a></li>
+			 <li><a target="_blank" class="dropdown-item" href="authen_lock_screen.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Lock Screen</a></li>
+			 <li><a target="_blank" class="dropdown-item" href="authen_confirm_mail.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Confirm Mail</a></li>
+			 
+			 <li><a  class="dropdown-item" href="profile.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Profile</a></li>
+          </ul>
+        </li>
+        
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-shopping-cart"></i> Ecommerce
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="ecommerce_prod.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Product</a></li>
+            <li><a class="dropdown-item" href="ecommerce_prod_details.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Product Details</a></li>
+			 <li><a class="dropdown-item" href="ecommerce_orders.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Order</a></li>
+            <li><a class="dropdown-item" href="ecommerce_orders_detail.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Order Details</a></li>
+			 <li><a class="dropdown-item" href="ecommerce_customers.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Customers</a></li>
+            <li><a class="dropdown-item" href="ecommerce_sellers.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Sellers</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle tag_b" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="margin-right:5px;" class="fa fa-briefcase"></i> Projects
+          </a>
+          <ul class="dropdown-menu drop_b1" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="project_list.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Lists</a></li>
+            <li><a class="dropdown-item" href="project_list_detail.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i>  Details</a></li>
+			 <li><a class="dropdown-item" href="create_project.html"><i style="font-size:8px; vertical-align:middle; margin-right:5px;" class="fa fa-circle-o"></i> Create Project</a></li>
+          </ul>
+        </li>
+		
+
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</section>
+
+
+<div class="container-fluid">
+  <div class="row">
+    
+
+    <main class="col-md-9 ms-sm-auto common col-lg-10 px-md-4">
+        <div class="row crm_1">
+	   <div class="col-md-3">
+	    <div class="analytic_1l">
+		 <h5 class="mb-0">Form Wizard</h5>
+		</div>
+	   </div>
+	   <div class="col-md-9">
+	    <div class="crm_1r pull-right">
+	      <ul>
+		   <li class="col_3 d-inline-block"><a href="#">Lorem</a> <i style="margin-left:5px; vertical-align:middle;" class="fa fa-chevron-right"></i></li>
+		   <li class="col_3 d-inline-block"><a href="#">Base UI</a> <i style="margin-left:5px; vertical-align:middle;" class="fa fa-chevron-right"></i></li>
+		   <li class="col_3 d-inline-block">Form Wizard</li>
+		  </ul>
+		</div>
+	   </div>
+	  </div>
+        
+
+        <div class="row form_wizard mt-2">
+	    <div class="col-lg-6 col-md-12">
+		   <div class="form_wizard_l bg-white" style="padding:20px;">
+			  <h6>BASIC WIZARD</h6>
+			  <ul class="nav nav-pills bg-light  nav-justified form-wizard-header mb-4 mt-3">
+                                                    <li class="nav-item">
+                                                        <a href="#basictab1" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2 active"> 
+                                                            <i style="margin-right:5px;" class="fa fa-user"></i>
+                                                            <span class="d-none d-sm-inline">Account</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#basictab2" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                                            <i style="margin-right:5px;" class="fa fa-smile-o"></i>
+                                                            <span class="d-none d-sm-inline">Profile</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#basictab3" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                                            <i style="margin-right:5px;" class="fa fa-check-circle-o"></i>
+                                                            <span class="d-none d-sm-inline">Finish</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+												
+	           <div class="tab-content b-0 mb-0">
+                                                    <div class="tab-pane active" id="basictab1">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="row mb-3">
+                                                                    <label class="col-md-3 col-form-label" for="userName">User name</label>
+                                                                    <div class="col-md-9">
+                                                                        <input type="text" class="form-control" id="userName" name="userName" value="Lorem">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mb-3">
+                                                                    <label class="col-md-3 col-form-label" for="password"> Password</label>
+                                                                    <div class="col-md-9">
+                                                                        <input type="password" id="password" name="password" class="form-control" value="123456789">
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="row mb-3">
+                                                                    <label class="col-md-3 col-form-label" for="confirm">Re Password</label>
+                                                                    <div class="col-md-9">
+                                                                        <input type="password" id="confirm" name="confirm" class="form-control" value="123456789">
+                                                                    </div>
+                                                                </div>
+                                                            </div> <!-- end col -->
+                                                        </div> <!-- end row -->
+                                                    </div>
+
+                                                    <div class="tab-pane" id="basictab2">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="row mb-3">
+                                                                    <label class="col-md-3 col-form-label" for="name"> First name</label>
+                                                                    <div class="col-md-9">
+                                                                        <input type="text" id="name" name="name" class="form-control" value="Francis">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mb-3">
+                                                                    <label class="col-md-3 col-form-label" for="surname"> Last name</label>
+                                                                    <div class="col-md-9">
+                                                                        <input type="text" id="surname" name="surname" class="form-control" value="Brinkman">
+                                                                    </div>
+                                                                </div>
+                                        
+                                                                <div class="row mb-3">
+                                                                    <label class="col-md-3 col-form-label" for="email">Email</label>
+                                                                    <div class="col-md-9">
+                                                                        <input type="email" id="email" name="email" class="form-control" value="info@gmail.com">
+                                                                    </div>
+                                                                </div>
+                                                            </div> <!-- end col -->
+                                                        </div> <!-- end row -->
+                                                    </div>
+
+                                                    <div class="tab-pane" id="basictab3">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="text-center">
+                                                                    <h2 class="mt-0"><i class="mdi mdi-check-all"></i></h2>
+                                                                    <h3 class="mt-0">Thank you !</h3>
+
+                                                                    <p class="w-75 mb-2 mx-auto">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui. Aliquam
+                                                                        mattis dictum aliquet.</p>
+
+                                                                    <div class="mb-3">
+                                                                        <div class="form-check d-inline-block">
+                                                                            <input type="checkbox" class="form-check-input" id="customCheck1">
+                                                                            <label class="form-check-label" for="customCheck1">I agree with the Terms and Conditions</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div> <!-- end col -->
+                                                        </div> <!-- end row -->
+                                                    </div>
+
+                                                    <ul class="list-inline wizard mb-0">
+                                                        <li class="previous list-inline-item disabled">
+                                                            <a href="#" class="btn btn-info">Previous</a>
+                                                        </li>
+                                                        <li class="next list-inline-item float-end">
+                                                            <a href="#" class="btn btn-info">Next</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+		 </div>
+		   
+		</div>
+		
+		<div class="col-lg-6 col-md-12">
+		   <div class="form_wizard_l bg-white" style="padding:20px;">
+			  <h6>BUTTON WIZARD</h6>
+			  <ul class="nav nav-pills nav-justified bg-light form-wizard-header mb-4 mt-3">
+                                                <li class="nav-item">
+                                                    <a href="#tab12" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2 active">
+                                                        <i style="margin-right:5px;" class="fa fa-user"></i>
+                                                        <span class="d-none d-sm-inline">Account</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#tab22" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                                        <i style="margin-right:5px;" class="fa fa-smile-o"></i>
+                                                        <span class="d-none d-sm-inline">Profile</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#tab32" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                                        <i style="margin-right:5px;" class="fa fa-check-circle-o"></i>
+                                                        <span class="d-none d-sm-inline">Finish</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+												
+	          <div class="tab-content mb-0 b-0">
+
+                                                <div class="tab-pane fade active show" id="tab12">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="row mb-3">
+                                                                <label class="col-md-3 col-form-label" for="userName2">User name</label>
+                                                                <div class="col-md-9">
+                                                                    <input type="text" class="form-control" id="userName2" name="userName2" value="Lorem">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <label class="col-md-3 col-form-label" for="password2"> Password</label>
+                                                                <div class="col-md-9">
+                                                                    <input type="password" id="password2" name="password2" class="form-control" value="123456789">
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="row mb-3">
+                                                                <label class="col-md-3 col-form-label" for="confirm2">Re Password</label>
+                                                                <div class="col-md-9">
+                                                                    <input type="password" id="confirm2" name="confirm2" class="form-control" value="123456789">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- end col -->
+                                                    </div> <!-- end row -->
+                                                </div>
+
+                                                <div class="tab-pane fade" id="tab22">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="row mb-3">
+                                                                <label class="col-md-3 col-form-label" for="name2"> First name</label>
+                                                                <div class="col-md-9">
+                                                                    <input type="text" id="name2" name="name2" class="form-control" value="Francis">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <label class="col-md-3 col-form-label" for="surname2"> Last name</label>
+                                                                <div class="col-md-9">
+                                                                    <input type="text" id="surname2" name="surname2" class="form-control" value="Brinkman">
+                                                                </div>
+                                                            </div>
+                                    
+                                                            <div class="row mb-3">
+                                                                <label class="col-md-3 col-form-label" for="email2">Email</label>
+                                                                <div class="col-md-9">
+                                                                    <input type="email" id="email2" name="email2" class="form-control" value="info@gmail.com">
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- end col -->
+                                                    </div> <!-- end row -->
+                                                </div>
+
+                                                <div class="tab-pane" id="tab32">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="text-center">
+                                                                <h2 class="mt-0"><i class="mdi mdi-check-all"></i></h2>
+                                                                <h3 class="mt-0">Thank you !</h3>
+
+                                                                <p class="w-75 mb-2 mx-auto">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui. Aliquam
+                                                                    mattis dictum aliquet.</p>
+
+                                                                <div class="mb-3">
+                                                                    <div class="form-check d-inline-block">
+                                                                        <input type="checkbox" class="form-check-input" id="customCheck2">
+                                                                        <label class="form-check-label" for="customCheck2">I agree with the Terms and Conditions</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- end col -->
+                                                    </div> <!-- end row -->
+                                                </div>
+                                            
+                                                <div class="float-end">
+                                                    <input type="button" class="btn btn-info button-next" name="next" value="Next">
+                                                    <input type="button" class="btn btn-info button-last" name="last" value="Last">
+                                                </div>
+                                                <div class="float-start">
+                                                    <input type="button" class="btn btn-info button-first" name="first" value="First">
+                                                    <input type="button" class="btn btn-info button-previous disabled" name="previous" value="Previous">
+                                                </div>
+
+                                                <div class="clearfix"></div>
+
+                                            </div>
+		 </div>
+		   
+		</div>
+		
+		 
+	   </div>
+	   
+	    <div class="row form_wizard mt-4">
+	    <div class="col-lg-6 col-md-12">
+		   <div class="form_wizard_l bg-white" style="padding:20px;">
+			  <h6>WIZARD WITH PROGRESS BAR</h6>
+			  <ul class="nav nav-pills nav-justified bg-light form-wizard-header mb-3 mt-3">
+                                                    <li class="nav-item">
+                                                        <a href="#account-2" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2 active">
+                                                            <i style="margin-right:5px;" class="fa fa-user"></i>
+                                                            <span class="d-none d-sm-inline">Account</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#profile-tab-2" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                                            <i style="margin-right:5px;" class="fa fa-smile-o"></i>
+                                                            <span class="d-none d-sm-inline">Profile</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#finish-2" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                                            <i style="margin-right:5px;" class="fa fa-check-circle-o"></i>
+                                                            <span class="d-none d-sm-inline">Finish</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+			 <div class="tab-content b-0 mb-0">
+
+                                                    <div id="bar" class="progress mb-3" style="height: 7px;">
+                                                        <div class="bar progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 33.3333%;"></div>
+                                                    </div>
+                                            
+                                                    <div class="tab-pane active" id="account-2">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="row mb-3">
+                                                                    <label class="col-md-3 col-form-label" for="userName1">User name</label>
+                                                                    <div class="col-md-9">
+                                                                        <input type="text" class="form-control" id="userName1" name="userName1" value="Lorem">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mb-3">
+                                                                    <label class="col-md-3 col-form-label" for="password1"> Password</label>
+                                                                    <div class="col-md-9">
+                                                                        <input type="password" id="password1" name="password1" class="form-control" value="123456789">
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="row mb-3">
+                                                                    <label class="col-md-3 col-form-label" for="confirm1">Re Password</label>
+                                                                    <div class="col-md-9">
+                                                                        <input type="password" id="confirm1" name="confirm1" class="form-control" value="123456789">
+                                                                    </div>
+                                                                </div>
+                                                            </div> <!-- end col -->
+                                                        </div> <!-- end row -->
+                                                    </div>
+
+                                                    <div class="tab-pane" id="profile-tab-2">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="row mb-3">
+                                                                    <label class="col-md-3 col-form-label" for="name1"> First name</label>
+                                                                    <div class="col-md-9">
+                                                                        <input type="text" id="name1" name="name1" class="form-control" value="Francis">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mb-3">
+                                                                    <label class="col-md-3 col-form-label" for="surname1"> Last name</label>
+                                                                    <div class="col-md-9">
+                                                                        <input type="text" id="surname1" name="surname1" class="form-control" value="Brinkman">
+                                                                    </div>
+                                                                </div>
+                                        
+                                                                <div class="row mb-3">
+                                                                    <label class="col-md-3 col-form-label" for="email1">Email</label>
+                                                                    <div class="col-md-9">
+                                                                        <input type="email" id="email1" name="email1" class="form-control" value="info@gmail.com">
+                                                                    </div>
+                                                                </div>
+                                                            </div> <!-- end col -->
+                                                        </div> <!-- end row -->
+                                                    </div>
+
+                                                    <div class="tab-pane" id="finish-2">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="text-center">
+                                                                    <h2 class="mt-0"><i class="mdi mdi-check-all"></i></h2>
+                                                                    <h3 class="mt-0">Thank you !</h3>
+
+                                                                    <p class="w-75 mb-2 mx-auto">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui. Aliquam
+                                                                        mattis dictum aliquet.</p>
+
+                                                                    <div class="mb-3">
+                                                                        <div class="form-check d-inline-block">
+                                                                            <input type="checkbox" class="form-check-input" id="customCheck3">
+                                                                            <label class="form-check-label" for="customCheck3">I agree with the Terms and Conditions</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div> <!-- end col -->
+                                                        </div> <!-- end row -->
+                                                    </div>
+
+                                                    <ul class="list-inline mb-0 wizard">
+                                                        <li class="previous list-inline-item disabled">
+                                                            <a href="#" class="btn btn-info">Previous</a>
+                                                        </li>
+                                                        <li class="next list-inline-item float-end">
+                                                            <a href="#" class="btn btn-info">Next</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>							
+		 </div>
+		   
+		</div>
+		 <div class="col-lg-6 col-md-12">
+		   <div class="form_wizard_l bg-white" style="padding:20px;">
+			  <h6>WIZARD WITH FORM VALIDATION</h6>
+			  <ul class="nav nav-pills nav-justified bg-light form-wizard-header mb-3 mt-3">
+                                                    <li class="nav-item" data-target-form="#accountForm">
+                                                        <a href="#first" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2 active">
+                                                            <i style="margin-right:5px;" class="fa fa-user"></i>
+                                                            <span class="d-none d-sm-inline">Account</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item" data-target-form="#profileForm">
+                                                        <a href="#second" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                                            <i style="margin-right:5px;" class="fa fa-smile-o"></i>
+                                                            <span class="d-none d-sm-inline">Profile</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item" data-target-form="#otherForm">
+                                                        <a href="#third" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                                            <i style="margin-right:5px;" class="fa fa-check-circle-o"></i>
+                                                            <span class="d-none d-sm-inline">Finish</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>	
+			<div class="tab-content mb-0 b-0">
+
+                                                    <div class="tab-pane active" id="first">
+                                                        <form id="accountForm" method="post" action="#" class="form-horizontal">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="row mb-3">
+                                                                        <label class="col-md-3 col-form-label" for="userName3">User name</label>
+                                                                        <div class="col-md-9">
+                                                                            <input type="text" class="form-control" id="userName3" name="userName3" required="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row mb-3">
+                                                                        <label class="col-md-3 col-form-label" for="password3"> Password</label>
+                                                                        <div class="col-md-9">
+                                                                            <input type="password" id="password3" name="password3" class="form-control" required="">
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="row mb-3">
+                                                                        <label class="col-md-3 col-form-label" for="confirm3">Re Password</label>
+                                                                        <div class="col-md-9">
+                                                                            <input type="password" id="confirm3" name="confirm3" class="form-control" required="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div> <!-- end col -->
+                                                            </div> <!-- end row -->
+                                                        </form>
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="second">
+                                                        <form id="profileForm" method="post" action="#" class="form-horizontal">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="row mb-3">
+                                                                        <label class="col-md-3 col-form-label" for="name3"> First name</label>
+                                                                        <div class="col-md-9">
+                                                                            <input type="text" id="name3" name="name3" class="form-control" required="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row mb-3">
+                                                                        <label class="col-md-3 col-form-label" for="surname3"> Last name</label>
+                                                                        <div class="col-md-9">
+                                                                            <input type="text" id="surname3" name="surname3" class="form-control" required="">
+                                                                        </div>
+                                                                    </div>
+                                                        
+                                                                    <div class="row mb-3">
+                                                                        <label class="col-md-3 col-form-label" for="email3">Email</label>
+                                                                        <div class="col-md-9">
+                                                                            <input type="email" id="email3" name="email3" class="form-control" required="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end col -->
+                                                            </div>
+                                                            <!-- end row -->
+                                                        </form>
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="third">
+                                                        <form id="otherForm" method="post" action="#" class="form-horizontal"></form>
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="text-center">
+                                                                        <h2 class="mt-0">
+                                                                            <i class="mdi mdi-check-all"></i>
+                                                                        </h2>
+                                                                        <h3 class="mt-0">Thank you !</h3>
+                                                        
+                                                                        <p class="w-75 mb-2 mx-auto">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis
+                                                                            dui. Aliquam mattis dictum aliquet.</p>
+                                                        
+                                                                        <div class="mb-3">
+                                                                            <div class="form-check d-inline-block">
+                                                                                <input type="checkbox" class="form-check-input" id="customCheck4" required="">
+                                                                                <label class="form-check-label" for="customCheck4">I agree with the Terms and Conditions</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end col -->
+                                                            </div>
+                                                            <!-- end row -->
+                                                        
+                                                    </div>
+
+                                                    <ul class="list-inline wizard mb-0">
+                                                        <li class="previous list-inline-item disabled"><a href="#" class="btn btn-info">Previous</a>
+                                                        </li>
+                                                        <li class="next list-inline-item float-end"><a href="#" class="btn btn-info">Next</a></li>
+                                                    </ul>
+
+                                                </div>											
+		 </div>
+		   
+		</div>
+		 
+	   </div>
+	   
+	   
+    </main>
+  </div>
+</div>
+
+<section id="footer">
+ <div class="container-fluid">
+  <div class="row footer">
+	   <div class="col-md-8">
+	    <div class="footer_1l">
+		  <p class="mb-0 text-light">© 2013 Your Website Name. All Rights Reserved | Design by <a class="col_1 font-weight-bold" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+		</div>
+	   </div>
+	   <div class="col-md-4">
+	    <div class="footer_1r" style="text-align:right;">
+		 <ul class="mb-0">
+		  <li class="d-inline font_14"><a class="text-light" href="#">About </a></li>
+		  <li class="d-inline font_14"><a class="text-light" href="#">Support </a></li>
+		  <li class="d-inline font_14"><a class="text-light" href="#">Contact Us </a></li>
+		 </ul>
+		</div>
+	   </div>
+	  </div>
+ </div>
+</section>
+
+<script src="js/bootstrap.bundle.min.js" ></script>
+
+</script><script src="js/global.js"></script>
+  
+
+</body></html>
